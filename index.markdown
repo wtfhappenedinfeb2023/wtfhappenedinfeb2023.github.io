@@ -76,7 +76,7 @@ A common argument presented by Inscription supporters is that Satoshi themselve 
 
 ### As a noderunner
 
-* Use Bitcoin Knots 25.1 (All spam filters are up to date)​​​​​​​
+* Use [Bitcoin Knots](https://github.com/bitcoinknots/bitcoin) 25.1 (All spam filters are up to date)​​​​​​​
 * Set the following configuration options: -permitbaremultisig=0, -datacarrier=0 (if you are using knots 25.1 or later)
 * Keep asking node software providers (their telegrams, twitters, nostrs) to introduce GUI options for filtering [Jester] - show there is demand.
 
@@ -91,11 +91,11 @@ If you're using a start9 distrbution, you can install a version of BItcoin Core 
 
 ### As a miner
 
-* Point your hashrate to ocean (ocean or core+antispam block template)​​​​​​​
+* Point your hashrate to [Ocean](https://ocean.xyz/getstarted) (ocean or core+antispam block template)​​​​​​​
 
 ### As a developer
 
-* PR for changed defaults
+* PR for changed defaults ([inscription](https://github.com/bitcoin/bitcoin/pull/28408) or [baremultisig](https://github.com/bitcoin/bitcoin/pull/28217))
 
 ### As a pleb
 
