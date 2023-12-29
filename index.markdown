@@ -7,6 +7,7 @@ layout: home
 
 * [Stats about non-payment transactions](#stats)
 * [Common narratives around spam](#common-narratives-around-spam)
+* [What can you do about it](#what-can-you-do-about-it)
 * [A brief history of spam in the Bitcoin network](#a-brief-history-of-spam-in-the-bitcoin-network)
 
 ## Stats
@@ -57,6 +58,18 @@ In the case of spam, refusing to store or relay it with your node can be defined
 Running a node is an active process. You might have been told that if "you're running a node, you're good", that is just the first step. Noderunners must remain ever-vigilant and ready to act in case of attack. This is effectively what makes Bitcoin anti-fragile. 
 {: style="text-align: justify"}
 
+### "The fees were going to be high anyways"
+
+Because Bitcoiners strongly believe that Bitcoin will be adopted by more users who see a need for Bitcoin properties (citizens experiencing significant currency debasement, institutional users who require fast finality, users tryting to circumvent capital controls, ...) combined with the choice to maintain blockdsize limited, there is a strong belief that transaction fees will become prohibitive in the future, excluding small users from even using on-chain transactions. By then, Layer 2 solutions are currently thought to be a necessity that will allow small users to still access Bitcoin's properties. 
+
+A common argument presented about the fact that spam induces high fees is we all knew that high fees were always going to be high, so high fees shouldn't be an issue. This is argument is flawed for two reasons:
+1. High fees are not the issue when it comes to spam, the issue is about the wastefullness and abuse of the network's function that cause harm to the network as a whole
+2. The reason why fees are high is important. The argument that fees were always going to be high assumes that there will be a strong demand for Bitcoin's properties. When spam is the reason why there are high fees on the network, that is obviously not the case. The high fees is not what matters, it's the adoption ad demand for Bitcoin's properties that causes it that's important.
+
+This second argument can easily be understood whit a simple thought experiment: 
+* Let's assume that an nation-state level attacker funds an attack where they fill blocks with transactions sent back to themselves, conssitently paying fees high enough to ensure that their transactions will be in the next block and stopping anyone else from transacting.
+* In this case, the fees will necessary become high, but this situation will stop anyone else from transacting, stopping any real demand for Bitcoin's properties. The fees are still high, but would you still support a mitigation scheme to limit the reach of this attack?
+
 ### Is the Genesis block message an "inscription"?
 
 Satoshi inscribed on-chain so I should be able to do it!
@@ -82,10 +95,10 @@ A common argument presented by Inscription supporters is that Satoshi themselve 
 
 #### Running a node on a Raspberry Pi?
 
-Don't forget, if you don't even use your node to broadcast your transactions and check the state of the chain or TXs of interest to you on-chain, your node plays no role at all in the network.  
-If it's a full node, it could at least help someone syncrhonize their own node.
+Don't forget that if you don't even use your node to broadcast your transactions and check the state of the chain or TXs of interest to you on-chain, your node plays no role at all in the network.  
+It is true though that if it's a full node, it could at least help someone syncrhonize their own node at some point in the future, which is the reason why it is important to keep the ability to run nodes affordable for most users.
 
-If you're using a start9 distrbution, you can install a version of BItcoin Core with a path that filters them (ordirespector).
+If you're using an Umbrel distrbution to run your node, you can install a version of Bitcoin Knots which will filter the inscription related spam. You can do so here: [https://github.com/Retropex/Bitcoin-store](https://github.com/Retropex/Bitcoin-store)
 
 
 
