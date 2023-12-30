@@ -200,4 +200,5 @@ See https://blog.bitmex.com/dapps-or-only-bitcoin-transactions-the-2014-debate/.
 * MrGnome for the rigorous review
 * [@leo_half](https://x.com/leo_haf?s=20) for his direct contributions to this page
 
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" 
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+[WTF happened in February 2023](http://wtfhappenedinfeb2023.com/) by [@piratebiscuit](https://twitter.com/PirateBiscuit) is marked with [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1)
