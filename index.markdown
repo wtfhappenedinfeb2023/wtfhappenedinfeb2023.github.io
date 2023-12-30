@@ -8,6 +8,12 @@ layout: home
 * [Stats about non-payment transactions](#stats)
 * [Characteristics of spam](#caracteristics-of-spam)
 * [Common narratives around spam](#common-narratives-around-spam)
+  * [Mempool policy is censorship](#mempool-policy-is-censorship)
+  * [A valid transaction is a valid transaction](#a-valid-transaction-is-a-valid-transaction)
+  * [The fees were going to be high anyways](#the-fees-were-going-to-be-high-anyways)
+  * [Satoshi inscribed on-chain so I should be able to do it too](#satoshi-inscribed-on-chain-so-i-should-be-able-to-do-it-too)
+  * [Bitcoin can thrive even if miners are made of pure greed](#bitcoin-can-thrive-even-if-miners-are-made-of-pure-greed)
+  * [Spam doesn't hinder adoption](#spam-doesnt-hinder-adoption)
 * [What can you do about it](#what-can-you-do-about-it)
 * [A brief history of spam in the Bitcoin network](#a-brief-history-of-spam-in-the-bitcoin-network)
 
@@ -43,10 +49,10 @@ During waves of spam, spam is always defended by spam supporters/defenders by cl
 {: style="text-align: justify"}
 
 Spam opponents often tend to define or characterize spam by defining it based on the **purpose of the network (*Peer-to-peer Electronic Cash system*)**, although there is truth in this characterization, it is an argument that can be hard to defend as the purpose of the network is a concept that can be seen as **subjective**. However, spam can also **be recognized by anyone**, even intellectually honest spammers, thanks to **two main characteristics**:
-1. **Wastefulness of the shared network resources**
-2. **Obvious misuse of Bitcoin's functions for a malicious purpose**
-In addition, these transactions are also often sent in **large amounts**.
 {: style="text-align: justify"}
+1. **Wastefulness of the shared network resources**
+2. **Obvious misuse of Bitcoin's functions for a malicious purpose**  
+In addition, these transactions are also often sent in **large amounts**.
 
 Transactions with no practical value or purpose, such as those submitted by supporters of big blocks during the Blocksize wars for example, are characterized by wastefulness. These transactions are malicious partly because they are wasteful, creating a backlog in the mempool that drives up transaction costs unnecessarily. The 2023 wave of spam is especially egregious because it involves storing obscenely large and unoptimized state data using methods that abuse several of Bitcoin's functions, such as the segregated witness script discount, OP_IF code, and bare multi-signatures. 
 {: style="text-align: justify"}
@@ -95,7 +101,7 @@ Discussing **the validity of the transaction is not the issue** and participants
 Another important detail is that some of the spam from the current wave, mostly inscription-based spam, can be considered to not be paying a fair fee as it circumvents the fair fee market by injecting data into the segregated witness space in order to benefit from a x0.25 discount. This is not the case for multisig based spam.
 {: style="text-align: justify"}
 
-### "The fees were going to be high anyways"
+### The fees were going to be high anyways
 
 Because Bitcoiners strongly believe that Bitcoin will be adopted by more users who see a need for Bitcoin properties (citizens experiencing significant currency debasement, institutional users who require fast finality, users trying to circumvent capital controls, ...) combined with the choice to maintain a limited blocksize, there is a strong belief that **transaction fees will become prohibitive in the future**, excluding small users from ever using on-chain transactions. The hope is that Layer 2 solutions will be ready by then.
 {: style="text-align: justify"}
@@ -110,7 +116,7 @@ This second point can easily be understood whit a simple thought experiment:
 * In this case, the fees will necessary become high, but this situation will stop anyone else from transacting, stopping any real demand for Bitcoin's properties. The fees are still high, but would you still support a mitigation scheme to limit the reach of such an attack?
 {: style="text-align: justify"}
 
-### Satoshi inscribed on-chain so I should be able to do it! 
+### Satoshi inscribed on-chain so I should be able to do it too
 
 A common argument presented by inscription supporters is that Satoshi themselves started the trends of injecting data in the timechain with the Genesis block message. This argument is simply wrong since Satoshi did not subvert the protocol to "inscribe" data, they simply used space already available in the Coinbase data that is designed to allow miners to broadcast arbitrary data. **It's always been part of Bitcoin and didn't introduce any wastefulness.**
 [More information here.](https://www.oreilly.com/library/view/mastering-bitcoin/9781491902639/ch08.html)
@@ -127,7 +133,7 @@ In addition, this argument does not really matter as Satoshi's initial actions s
 * [More information about mempool policy and its role](https://bitcoin.stackexchange.com/questions/120269/what-is-mempool-policy)
 
 
-### Miners must be made out of pure greed for the protocol to work
+### Bitcoin can thrive even if miners are made of pure greed
 
 * Miners need Bitcoin to be successful over the long term to make profits and repay their investments
 * What makes Bitcoin valuable is its unique properties as electronic cash
