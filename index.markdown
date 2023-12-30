@@ -66,6 +66,13 @@ The two characteristics presented here are a better way to characterize spam ins
 
 ## Common narratives around spam
 
+  * [Mempool policy is censorship](#mempool-policy-is-censorship)
+  * [A valid transaction is a valid transaction](#a-valid-transaction-is-a-valid-transaction)
+  * [The fees were going to be high anyways](#the-fees-were-going-to-be-high-anyways)
+  * [Satoshi inscribed on-chain so I should be able to do it too](#satoshi-inscribed-on-chain-so-i-should-be-able-to-do-it-too)
+  * [Bitcoin can thrive even if miners are made of pure greed](#bitcoin-can-thrive-even-if-miners-are-made-of-pure-greed)
+  * [Spam doesn't hinder adoption](#spam-doesnt-hinder-adoption)
+
 ### Mempool policy is censorship
 
 The statement implies that any policy applied to your mempool, which temporarily stores unconfirmed transactions in your Bitcoin node before they're added to blocks, is a form of censorship. However, this argument is wrong because **mempool and relay are not forced on you by anyone and are not enforced over the whole network under threat**; instead, they only allow you to **take control over your own mempool** and relay policies to prioritize or refuse to store or relay certain types of transactions. This is the **opposite of censorship**, this is what sovereignty means. This set of rules can be defined through your `bitcoin.conf` file to describe **what a valid transaction is from the point of view of your own mempool**.
