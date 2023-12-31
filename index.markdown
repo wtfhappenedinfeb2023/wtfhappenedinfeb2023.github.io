@@ -151,7 +151,7 @@ Where does the narrative/idea that miners must be greedy come from? How do belie
 ### Spam doesn't hinder adoption
 
 * Spam is displacing interest in Bitcoin outside of the chain
-    * Liquid usage chart: going up
+    * Liquid usage chart: [going up](https://liquid.network/fr/graphs/mempool#3m)
     * Canada Purpose ETF BTCC volume chart: going up
 
 
@@ -169,7 +169,7 @@ Don't forget that if you don't even use your node to broadcast your transactions
 It is true though that if it's a full node, it could at least help someone synchronize their own node at some point in the future, which is the reason why it is important to keep the ability to run nodes affordable for most users.
 {: style="text-align: justify"}
 
-* If you're using an Umbrel distribution to run your node, you can install a version of Bitcoin Knots which will filter the inscription related spam. You can do so here: [https://github.com/Retropex/Bitcoin-store](https://github.com/Retropex/Bitcoin-store)
+* If you're using an Umbrel distribution to run your node, you can install a version of Bitcoin Knots which will filter the inscription related spam. You can do so here with an alternative [app store](https://github.com/Retropex/Bitcoin-store).
 {: style="text-align: justify"}
 
 
@@ -211,7 +211,7 @@ See https://blog.bitmex.com/dapps-or-only-bitcoin-transactions-the-2014-debate/.
 ## License and acknowledgement
 
 * MrGnome for the rigorous review
-* [@leo_half](https://x.com/leo_haf?s=20) for his direct contributions to this page
+* [@leo_haf](https://x.com/leo_haf) for his direct contributions to this page
 
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 [WTF happened in February 2023](http://wtfhappenedinfeb2023.com/) by [@piratebiscuit](https://twitter.com/PirateBiscuit) is marked with [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1)
