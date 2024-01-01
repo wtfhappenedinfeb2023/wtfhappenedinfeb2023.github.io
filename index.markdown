@@ -5,7 +5,7 @@
 layout: home
 ---
 
-* [Stats about non-payment transactions](#stats)
+* [Stats about non-payment transactions](#stats-about-non-payment-transactions)
 * [Characteristics of spam](#characteristics-of-spam)
 * [Common narratives around spam](#common-narratives-around-spam)
   * [Mempool policy is censorship](#mempool-policy-is-censorship)
@@ -14,7 +14,7 @@ layout: home
   * [Satoshi inscribed on-chain so I should be able to do it too](#satoshi-inscribed-on-chain-so-i-should-be-able-to-do-it-too)
   * [Bitcoin can thrive even if miners are high-time preference greedy actors](#bitcoin-can-thrive-even-if-miners-are-high-time-preference-greedy-actors)
   * [There's nothing you can do about it](#theres-nothing-you-can-do-about-it)
-  * [Fighting it will break Bitcoin](#fighting-it-will-break-bitcoin)
+  * [Fighting it will break Bitcoin](#fighting-spam-will-break-bitcoin)
   * [Making transactions more efficient on L1 will solve spam](#making-transactions-more-efficient-on-l1-will-solve-spam)
   * [High fees will solve spam](#high-fees-will-solve-spam)
   * [Everything is good for Bitcoin](#everything-is-good-for-bitcoin)
@@ -62,7 +62,7 @@ Transactions with **no practical value or purpose**, such as those submitted by 
 These transactions are malicious partly because they are wasteful, creating a backlog in the mempool that **drives up transaction costs unnecessarily**. The 2023 wave of spam is especially egregious because it involves **storing obscenely large and unoptimized state data using methods that abuse several of Bitcoin's functions**, such as the segregated witness script discount, `OP_IF` `OP_FALSE` codes, and bare multi-signatures. 
 {: style="text-align: justify"}
 
-These transactions can be classified as spam due to their ignorance or malice, they could also occur off-chain relatively easily through *NFTs* with reference hashes or *BRC-20* tokens with reference hashes much more efficiently and this was already proposed several times. Functionally, the result would be the same as it would allow users of this "*standard*" to verify the data **without overwhelming the chain**. *BRC-20* tokens are **not optimized at all** for example and use clear *JSON* (!) instead of *HEX* or *base64* encoding, demonstrating a **complete disregard for the shared resource of the timechain**. This failure is particularly concerning since they account for more than 50% of the average block's size, [as shown in the BTC spam analysis blocksize graph](#space-occupied-by-non-payments-vs-payments-on-the-timechain-since-january-2023,) despite being avoidable with a more responsible usage.
+These transactions can be classified as spam due to their ignorance or malice, they could also occur off-chain relatively easily through *NFTs* with reference hashes or *BRC-20* tokens with reference hashes much more efficiently and this was already proposed several times. Functionally, the result would be the same as it would allow users of this "*standard*" to verify the data **without overwhelming the chain**. *BRC-20* tokens are **not optimized at all** for example and use clear *JSON* (!) instead of *HEX* or *base64* encoding, demonstrating a **complete disregard for the shared resource of the timechain**. This failure is particularly concerning since they account for more than 50% of the average block's size, [as shown in the BTC spam analysis blocksize graph](#space-occupied-by-non-payments-vs-payments-on-the-timechain-since-january-2023) despite being avoidable with a more responsible usage.
 {: style="text-align: justify"}
 
 The two characteristics presented here are a simple way to recognize spam that most likely violates the purpose of the network and the desired behavior, and Bitcoin actually supports other protocols that submit non-payment transactions which are not considered as spam by most participants. A good example is the [OpentimeStamps protocol](https://opentimestamps.org/) (there are also many bad examples), which uses Bitcoin for blockchain timestamping and is not considered as spam by most participants in the network as it generally does not present the two characteristics presented above: it uses shared resources efficiently and does not misuse Bitcoin's functions.
@@ -77,7 +77,7 @@ The two characteristics presented here are a simple way to recognize spam that m
   * [Satoshi inscribed on-chain so I should be able to do it too](#satoshi-inscribed-on-chain-so-i-should-be-able-to-do-it-too)
   * [Bitcoin can thrive even if miners are high-time preference greedy actors](#bitcoin-can-thrive-even-if-miners-are-high-time-preference-greedy-actors)
   * [There's nothing you can do about it](#theres-nothing-you-can-do-about-it)
-  * [Fighting it will break Bitcoin](#fighting-it-will-break-bitcoin)
+  * [Fighting it will break Bitcoin](#fighting-spam-will-break-bitcoin)
   * [Making transactions more efficient on L1 will solve spam](#making-transactions-more-efficient-on-l1-will-solve-spam)
   * [High fees will solve spam](#high-fees-will-solve-spam)
   * [Everything is good for Bitcoin](#everything-is-good-for-bitcoin)
@@ -115,7 +115,7 @@ Discussing **the validity of the transaction is not the issue** and participants
 * **Are these transactions abusing some of Bitcoin's functions to circumvent limitations put in place to preserve the network's resources?**
 {: style="text-align: justify"}
 
-Another important detail is that some of the spam from the current wave, mostly inscription-based spam, can be considered to not be paying a fair fee as it circumvents the fair fee market by injecting data into the segregated witness space in order to benefit from a x0.25 discount. This is not the case for multisig based spam.
+Another important detail is that some of the spam from the current wave, mostly inscription-based spam, can be considered to not be paying a fair fee as it circumvents the fair fee market by injecting data into the segregated witness space in order to benefit from a x0.25 discount. This is not the case for bare multisig based spam or `OP_RETURN` based spam.
 {: style="text-align: justify"}
 
 ### The fees were going to be high anyways
@@ -135,7 +135,7 @@ This second point can easily be understood whit a simple thought experiment:
 
 ### Satoshi inscribed on-chain so I should be able to do it too
 
-A common argument presented by inscription supporters is that Satoshi themselves started the trends of injecting data in the timechain with the Genesis block message. This **argument is simply wrong since Satoshi did not subvert (2nd characteristic of spam) the protocol to "inscribe" data**, they simply used space already available in the Coinbase data that is designed to allow miners to broadcast arbitrary data. **It's always been part of Bitcoin and didn't introduce any wastefulness.**  
+A common argument presented by inscription supporters is that Satoshi themselves started the trends of injecting data in the timechain with the Genesis block message. This **argument is simply wrong since Satoshi did not subvert ([2nd characteristic of spam](#characteristics-of-spam)) the protocol to "inscribe" data**, they simply used space already available in the Coinbase data that is designed to allow miners to broadcast arbitrary data. **It's always been part of Bitcoin and didn't introduce any wastefulness.**  
 [More information here.](https://www.oreilly.com/library/view/mastering-bitcoin/9781491902639/ch08.html)
 {: style="text-align: justify"}
 
@@ -226,6 +226,7 @@ It is true though that if it's a full node, it could at least help someone synch
 {: style="text-align: justify"}
 
 * If you're using an Umbrel distribution to run your node, you can install a version of Bitcoin Knots which will filter the inscription related spam. You can do so here with an alternative [app store](https://github.com/Retropex/Bitcoin-store).
+  * [Detailed instructions to install or update your Umbrel node are provided here](/install)
 {: style="text-align: justify"}
 
 

@@ -14,23 +14,23 @@ layout: home
 
 ## Umbrel steps
 
-### if you don't have a node
+### if you don't have a node yet
 
-1. [install](https://umbrel.com/umbrelos#install) Umbrel
+1. [install Umbrel](https://umbrel.com/umbrelos#install) 
 1. Install the alternative app store
     - Go to app store
     - click on ... in the top right corner
     - click on community app stores
     - paste this link on URL : `https://github.com/Retropex/Bitcoin-store.git`
     - click on open
-    - finaly install the version of your platform
+    - finally install the version of your platform
 
 
 ### if you already have a node
 
 To start you will have to connect to your umbrel using `ssh`, there are a lot of tutorials to use ssh on the internet do not hesitate to go and look. 
 
-If you have installed umbrelOS on a raspberry PI 4 here is the command to use:
+If you have installed umbrelOS on a raspberry PI 4 here is the command needed:
 
 ```
 ssh -t umbrel@umbrel.local
@@ -108,16 +108,16 @@ sudo docker container start btc-knots_server_1 btc-knots_bitcoind_1 btc-knots_i2
 ```
 
 
-And here you have ordisrespector on your node.
+And there you go, you now have ordisrespector on your node.
 
 
 ## Mynode steps
 
 1. Connect to your mynode
-1. go to settings
-1. Click on `Show upgrade logs`
-1. go down to custom bitcoin version
-1. selection ordisrespector with the desired version
-1. click on install
+2. Go to settings
+3. Click on `Show upgrade logs`
+4. Go down to custom bitcoin version
+5. Selection ordisrespector with the desired version
+6. Click on install
 
-And here you have ordisrespector on your node.
+And there you go, you now have ordisrespector on your node.
