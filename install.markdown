@@ -114,10 +114,10 @@ And there you go, you now have ordisrespector on your node.
 ## Mynode steps
 
 1. Connect to your mynode
-2. Go to settings
-3. Click on `Show upgrade logs`
-4. Go down to custom bitcoin version
-5. Selection ordisrespector with the desired version
-6. Click on install
+1. Go to settings
+1. Click on `Show upgrade logs`
+1. Go down to custom bitcoin version
+1. Selection ordisrespector with the desired version
+1. Click on install
 
 And there you go, you now have ordisrespector on your node.
