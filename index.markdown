@@ -19,6 +19,7 @@ layout: home
   * [High fees will solve spam](#high-fees-will-solve-spam)
   * [Everything is good for Bitcoin](#everything-is-good-for-bitcoin)
 * [What can you do about it](#what-can-you-do-about-it)
+  * [Detailed installation instructions](/install)
 * [A brief history of spam in the Bitcoin network](#a-brief-history-of-spam-in-the-bitcoin-network)
 
 ## Stats about non-payment transactions
@@ -120,7 +121,7 @@ Another important detail is that some of the spam from the current wave, mostly 
 
 ### The fees were going to be high anyways
 
-Because Bitcoiners strongly believe that Bitcoin will be adopted by more users who see a need for Bitcoin properties (citizens experiencing significant currency debasement, institutional users who require fast finality, users trying to circumvent capital controls, ...) combined with the choice to maintain a limited blocksize, there is a strong belief that **transaction fees will become prohibitive in the future**, excluding small users from ever using on-chain transactions. The hope is that Layer 2 solutions will be ready by then.
+Because Bitcoiners strongly believe that Bitcoin will be adopted by more users who see a need for Bitcoin's properties (citizens experiencing significant currency debasement, institutional users who require fast finality, users trying to circumvent capital controls, ...) combined with the choice to maintain a limited blocksize, there is a strong belief that **transaction fees will become prohibitive in the future**, excluding small users from ever using on-chain transactions. The hope is that Layer 2 solutions will be ready by then.
 {: style="text-align: justify"}
 
 A common argument presented about the fact that spam induces high fees is that we all knew that high fees were always going to be high, so high fees shouldn't be an issue. This is argument is flawed for two reasons:
@@ -130,7 +131,7 @@ A common argument presented about the fact that spam induces high fees is that w
 
 This second point can easily be understood whit a simple thought experiment: 
 * Let's assume that a nation-state level attacker funds an attack where they fill blocks with transactions sent back to themselves, consistently paying fees high enough to ensure that their transactions will be in the next block and stopping anyone else from transacting.
-* In this case, the fees will necessary become high, but this situation will stop anyone else from transacting, stopping any real demand for Bitcoin's properties. The fees are still high, but would you still support a mitigation scheme to limit the reach of such an attack?
+* In this case, the fees will necessary become high, but this situation will stop anyone else from transacting, stopping any real demand for Bitcoin's properties. The fees are high, yes, but would you still support a mitigation scheme to limit the reach of such an attack?
 {: style="text-align: justify"}
 
 ### Satoshi inscribed on-chain so I should be able to do it too
@@ -184,18 +185,25 @@ Like I have an obligation to protect that. And so if I choose to protect it by *
 
 ### There's nothing you can do about it
 
-A common argument presented by spammers and spam enablers is that spam should be forgotten about because nothing can be done about it. This argument is simply wrong. In the past, [spam has been stopped using filters and through the participation of miners](#counterparty). The arguments presented against to argue that you shouldn't try to stop spam are divided into two categories:
-1. They can simply change a **technical** detail of the data injection implementation and circumvent filters, if filters is the method chosen to fight spam
-2. Miners are high-time preference greedy mercenaries
+A common argument presented by spammers and spam enablers is that spam should be forgotten about because nothing can be done about it. This argument is simply wrong. In the past, [spam has been stopped using filters and through the participation of miners](#counterparty). The arguments presented to argue that you shouldn't try to stop spam are divided into two categories:
+1. They can simply change a **technical detail of the data injection method and circumvent filters**, if filters is the method chosen to fight spam
+2. **Miners are high-time preference greedy mercenaries**
 {: style="text-align: justify"}
 
 The second argument was [already addressed and won't be discussed again here](#bitcoin-can-thrive-even-if-miners-are-high-time-preference-greedy-actors).  
-Regarding the first one, there is one important point about: it is a purely technical argument. However spamming is not only a technical issue. Spammers are ready to pay high fees to get their spam into blocks mainly because they are hoping to make a profit out of the spam. The profits made by spammers rely on a network effect around the standard they adopted to spam. That is partly why spamming using extremely inefficient data storage methods continues to be dominant although more efficient "standards" to store data on-chain have been proposed. Updating default filters sends a strong message to signify that certain data injection methods are not desirable and that actors who rely on them are using non-desirable methods. Simply updating default filters in the past has worked, but for reasons unclear, Bitcoin Core developers have refused to consider spam as a significant issue and did not take any action at all to update default filters.  
-Breaking the network effect of a certain "standard" of spam is critical as it forces spammers to adopt a new standard and re-start the whole process of building an eco-system and create a community around it. This also sends a strong signal to [external sources of funding that might want to support spammers](https://x.com/PrinceySOV/status/1740821876992344352?s=20) that future investments are at risk of being rejected by the network at any moment.
+Regarding the first one, an important point about it is that it is a **purely technical argument**. However, spamming is not only a technical issue. **Spammers are ready to pay high TX fees to get their spam into blocks mainly because they are hoping to make a profit out of the spam**. The profits made by spammers **rely on a network effect around the standard they adopted to spam**. That is partly why spamming using **extremely inefficient data storage methods** continues to be dominant although more efficient "standards" to store data on-chain have been proposed. Updating default filters s**ends a strong message to signify that certain data injection methods are not desirable** and that **actors who rely on them are using non-desirable methods**. Simply updating default filters in the past has worked, but for reasons unclear, Bitcoin Core developers have refused to consider spam as a significant issue since Taproot and did not take any action at all to update default filters.  
+Breaking the network effect of a certain "standard" of spam is critical as **it forces spammers to adopt a new standard** and resets the whole process of **building an eco-system and creating a community around it**. This also sends a strong signal to [external sources of funding that might want to support spammers](https://x.com/PrinceySOV/status/1740821876992344352?s=20) that future investments are at risk of being rejected by the network at any moment.
 {: style="text-align: justify"}
 
-There is no other way to fight spam other than through a cat & mouse game and there will most likely never be an absolute solution to spam. That is because, by nature, spam will try to camouflage as valid content in order to waste and misuse shared network resources. The mouse needs to build ecosystems that can generate a profit out of the spam, that is always a costly endeavour that requires funding and to build up a network effect around a source of revenue. The cat can easily become better at this game, developing filters to identify and block new sources of spam is trivial as spammers will usually have to reveal how to identify spam in order to build marketplaces for example around it. All the types spam of the 2023 wave use "explorers" to identify and present each type of spam, these software can be used to identify the spam.  
-If spammers eventually make spam so efficient and indistinguishable from UTXO transactions that it cannot be identified anymore, it will most likely won't be considered as spam anymore, until then, it is necessary to continuously repel spammers.
+There is no other way to fight spam other than **through a cat & mouse game** and there will most likely **never be an absolute solution to spam**. That is because, by nature, **spam will try to camouflage as valid content** in order to waste and misuse shared network resources. The mouse needs to build ecosystems that can generate a profit out of the spam, that is always a costly endeavour that requires funding to build up a network effect around a source of revenue. The cat can easily become better at this game. Developing filters to identify and block new sources of spam is trivial as **spammers will usually have to reveal how to identify spam in order to build marketplaces for example around it**. All the types spam of the 2023 wave use "explorers" to identify and present each type of spam, these software can be used to identify the spam.  
+If spammers eventually make spam so efficient that it becomes **indistinguishable from Bitcoin currency transactions**, so much so that it **cannot be identified anymore**, it will most likely won't be considered as spam anymore because of its efficiency. Until then, it is hard to imagine any path or solution other than continuously repealing spam.
+{: style="text-align: justify"}
+
+Interestingly, spammers also propose that financial transactions should be updated to "*improve the incentives and infrastructure for the transactions you DO want to see*", namely Bitcoin currency transactions. This **obviously contradicts the narrative discussed here**, as it means that **something can be done**, as long as it is what the spammers want you to do. It is the only way to solve this issue according to them. The changes hinted at by spammers are significant as they would require a soft or hard-fork in order to make the native currency, bitcoins, of the network better compete with spam (which is a nonsense as Bitcoin currency transactions are much more efficient). At the same time, spammers insist that nothing can be done and that a kind of significant update is necessary. It appears that the spammer narrative might be following the steps described below:
+1. **Demoralization**: Bitcoin is broken, maxis are stupid, sh*tcoins are better and will leave bitcoin behind. Bitcoiners are all retarded losers and they don't understand all the amazing tech (like bugs that can be used to inject non-optimized data on-chain).
+2. **Destabilization**: We **need** NFTs, we **need** rollups, we **need** to activate a lot of things on the timechain to compete with spam.
+3. **Fees are very high**: Bitcoin doesn't work. Hodling doesn't work. You need to upgrade Bitcoin to be able to answer the market demand for other things as shown by the higher fees.
+4. We need a **hard fork**.
 {: style="text-align: justify"}
 
 ### Fighting spam will break Bitcoin
@@ -212,6 +220,8 @@ Nothing is indestructible, nothing is perfect. Bitcoin need participants to acti
 
 
 ## What can you do about it?
+
+A more detailed version of these instructions [can be found here](/install).
 
 ### As a noderunner
 
