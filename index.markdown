@@ -22,6 +22,10 @@ layout: home
   * [Detailed installation instructions](/install)
 * [A brief history of spam in the Bitcoin network](#a-brief-history-of-spam-in-the-bitcoin-network)
 
+### Note
+
+If you are already convinced of why you should stop spam, you can go directly to the [installation instructions page](/install.markdown).
+
 ## Stats about non-payment transactions
 
 ### mempool.space's transactions by fee rate since 2020
