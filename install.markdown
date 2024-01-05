@@ -28,6 +28,8 @@ layout: home
 
 ### if you already have a node
 
+⚠️ **follow this instructions if you only have Bitcoin installed** ⚠️
+
 To start you will have to connect to your umbrel using `ssh`, there are a lot of tutorials to use ssh on the internet do not hesitate to go and look. 
 
 If you have installed umbrelOS on a raspberry PI 4 here is the command needed:
