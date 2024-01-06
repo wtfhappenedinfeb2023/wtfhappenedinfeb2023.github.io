@@ -203,23 +203,43 @@ There is no other way to fight spam other than **through a cat & mouse game** an
 If spammers eventually make spam so efficient that it becomes **indistinguishable from Bitcoin currency transactions**, so much so that it **cannot be identified anymore**, it will most likely won't be considered as spam anymore because of its efficiency. Until then, it is hard to imagine any path or solution other than continuously repealing spam.
 {: style="text-align: justify"}
 
-Interestingly, spammers also propose that financial transactions should be updated to "*improve the incentives and infrastructure for the transactions you DO want to see*", namely Bitcoin currency transactions. This **obviously contradicts the narrative discussed here**, as it means that **something can be done**, as long as it is what the spammers want you to do. It is the only way to solve this issue according to them. The changes hinted at by spammers are significant as they would require a soft or hard-fork in order to make the native currency, bitcoins, of the network better compete with spam (which is a nonsense as Bitcoin currency transactions are much more efficient). At the same time, spammers insist that nothing can be done and that a kind of significant update is necessary. It appears that the spammer narrative might be following the steps described below:
-1. **Demoralization**: Bitcoin is broken, maxis are stupid, sh*tcoins are better and will leave bitcoin behind. Bitcoiners are all retarded losers and they don't understand all the amazing tech (like bugs that can be used to inject non-optimized data on-chain).
-2. **Destabilization**: We **need** NFTs, we **need** rollups, we **need** to activate a lot of things on the timechain to compete with spam.
-3. **Fees are very high**: Bitcoin doesn't work. Hodling doesn't work. You need to upgrade Bitcoin to be able to answer the market demand for other things as shown by the higher fees.
-4. We need a **hard fork**.
+Interestingly, spammers also propose that financial transactions should be updated to "*improve the incentives and infrastructure for the transactions you DO want to see*", namely Bitcoin currency transactions. This **obviously contradicts the narrative discussed here**, as it means that **something can be done**, as long as it is what the spammers want you to do. It is the only way to solve this issue according to them. The changes hinted at by spammers are significant as they would require a soft or hard-fork in order to make the native currency, bitcoins, of the network better compete with spam (which is a nonsense as Bitcoin currency transactions are much more efficient). At the same time, spammers insist that nothing can be done and that a kind of significant update is necessary. 
 {: style="text-align: justify"}
 
-### Fighting spam will break Bitcoin
+#### The 100 sats TX challenge
+
+[Francis Pouliot](https://twitter.com/francispouliot) proposed a simple challenge to prove that **some things can be done and that one of those things is simply introducing filters**. In a tweet, he challenged someone claiming that "*spam filters don't work*", meaning that mempool policies don't work - see [Mempool policy is censorship](#mempool-policy-is-censorship), to **send 100 sats to a specific address**.  
+This challenge aims at showing that filters do work because Bitcoin Core currently has a default dust filter that makes it very hard to get a 100 sats transaction relayed.
+{: style="text-align: justify"}
+
+> Please send 100 sats to this address
+bc1qc3qlmus3udzwrfxtkja8upe33jvlydwy2cjr96
+
+One of the participants to the conversation who accepted to take on the challenge has explicitly stated that they submitted such a transaction to a miner, allegedly Luxor, to mine this transaction as they know it won't be relayed by the network because of mempool policies. This action simply proves that mempool filters do work as they had to collude with a miner to get their transaction in a block, which didn't happen yet more than 4 hours after the challenge started because they need to wait for the miner they colluded with to find a block. This also means that the miner will have to continuously include this 100 sats transaction in their templates and that chances of this transaction making it through are as high as the hashrate share represented by the pool of that miner. This will of course mean that if transactions ready to pay a higher fee present themselves meanwhile, they might have to reject them to keep the 100 sats transaction if the block is already full. One of the participants who tried to do so actually explained that they [tried sending a 100 sats transaction to a larger pool, ViaBTC, which would maybe get it through faster, but that it got rejected](https://x.com/benthecarman/status/1743761650430181581?s=20) - most likely because of mempool policy (filters.)  
+The transaction will eventually make it through, but it required colluding with a miner that's willing to take it Out of Band, outside of the mempool, and that strongly limited the reach of the transaction since only a single pool is working on it which relegates it to the next block found by that pool. Currently, spam is mined by all miners which makes it present in blocks.  
+{: style="text-align: justify"}
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">lmao they are literally proving how effective spam filters are in real time<br><br>instead of confirming in 10 minutes, my math shows there&#39;s a 50% chance of the spam transactions getting mined in the next 6.5 hours. And it cost more.<br><br>Huge L for spam apologists, down bad</p>&mdash; Asher Hopp (@AsherHopp) <a href="https://twitter.com/AsherHopp/status/1743765222987534696?ref_src=twsrc%5Etfw">January 6, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Miners can try to put whatever they want in blocks, the only workaround nodes have against that is to reject a valid block (meaning that it has a valid Proof-of-Work that answers the Difficulty condition) that contains some transactions or data proposed by a miner.  
+{: style="text-align: justify"}
+
 
 ### Making transactions more efficient on L1 will solve spam
+
+The argument in support of **UTXO aggregation** that suggests it can mitigate spam on the Bitcoin network is a compelling one. **Covenants**, which are a **type of script used to share UTXOs between users without requiring custodial services**, would make **monetary transactions more cost-effective** and thus **better equipped to compete against spam**. However, an important detail that needs to be acknowledged is that **covenants reduce the amount of fees miners receive**, which goes **against their economic incentives**. Lightning, a type of scaling solution, also falls into this category as it reduces miner fee income.
+{: style="text-align: justify"}
+
+This argument presents an **apparent contradiction with the idea that spam filters are not economically feasible** because they too go against miner incentives. This raises an interesting question: **why would miners accept Covenants or Lightning but refuse to implement spam filters?**  
+The answer lies in the fact that spam filters, like CTV and Lightning, ultimately improve network efficiency, which will have a positive economic impact on miners as it increases the overall value of the Bitcoin network. Mining is not just about earning fees; it also involves securing the blockchain through mining work. By improving network efficiency, these solutions make it more profitable for miners to secure the chain and receive block rewards while reducing their dependence on transaction fees. As a result, they become economically beneficial for all parties involved - users, merchants, miners, and Bitcoin as a whole.
+{: style="text-align: justify"}
 
 ### High fees will solve spam
 
 ### Everything is good for Bitcoin
 
-This statement would mean that Bitcoin is perfect and has no flaws or surface attack at all. This will most likely always be wrong. The reason why everything is good for Bitcoin is that Bitcoin can adapt, thanks to its nodes mainly, to attacks and defend itself against them. But this requires an immune reaction that is currently considered as useless.  
-Nothing is indestructible, nothing is perfect. Bitcoin need participants to actively defend it and address new attack vectors. That does not mean implementing soft-forks to defend against everything. Mempool policies, relay policies, long-term miner incentives, social campaigns, ... are all part of the toolkit that needs to be gradually deployed to defend the network.
+This statement would mean that **Bitcoin is perfect and has no flaws or surface attack at all**. This will most likely **always be wrong**. The reason why everything is good for Bitcoin is that **Bitcoin can adapt**, thanks to its nodes allegedly, against attacks and defend itself that way. But this **requires an immune reaction that is currently considered as useless**.  
+Nothing is indestructible, nothing is perfect. Bitcoin need participants to actively defend it and address new attack vectors. That does not mean implementing soft-forks to defend against everything. Mempool policies, relay policies, long-term miner incentives, social campaigns, ... are all part of the toolkit that needs to be gradually deployed to defend the network. This toolkit can become increasingly more aggressive until the ultimate "*defense*", in the case of a miner concerted attack for example, where nodes would migrate to a new Proof-of-Work algorithm and reject SHA256 mined blocks for example.
 {: style="text-align: justify"}
 
 
