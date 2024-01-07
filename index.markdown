@@ -274,7 +274,8 @@ It is true though that if it's a full node, it could at least help someone synch
 
 ### As a pleb
 
-* Be vocal about your concerns. Remember that discussions are not always there to persuade the detractor, but to form an opinion of observers. Your voice **is** the market force.
+* Be vocal about your concerns, join discussions, ask questions, share knowledge. Remember that discussions are not always there to persuade the detractor, but to form an opinion of observers. Your voice **is** the market force.
+* https://delvingbitcoin.org/t/bug-spammers-get-bitcoin-blockspace-at-discounted-price-lets-fix-it/327
 
 
 ## A brief history of spam in the Bitcoin network
