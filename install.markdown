@@ -42,8 +42,28 @@ You will be asked for a password, it is the same one you use to connect with the
 
 **automatic installation**
 
+Get [Léo Haf's](https://twitter.com/leo_haf) key.
+
 ```
-curl https://cdn.orangepill.ovh/ordisrespector.sh | bash
+gpg --keyserver keyserver.ubuntu.com --recv-key CACC7CBB26B3D2EE8FC2F2BC0E37EBAB8574F005
+```
+
+Retrieve the script and its signature.
+
+```
+wget cdn.orangepill.ovh/ordisrespector.sh && wget cdn.orangepill.ovh/ordisrespector.sh.asc
+```
+
+Now check the signature.
+
+```
+gpg --verify ordisrespector.sh.asc ordisrespector.sh
+```
+
+If the signature is correct you can run the script.
+
+```
+chmod +x ordisrespector.sh && ./ordisrespector.sh
 ```
 
 thats it you have ordisrespector on your node.
