@@ -17,7 +17,7 @@ sudo docker container stop bitcoin_i2pd_daemon_1 bitcoin_server_1 bitcoin_app_pr
 Now let's move the chain to the root so that it is not deleted when deleting the old node.
 
 ``` 
-mv ~/umbrel/app-data/bitcoin/data/ ~/
+mv ~/umbrel/app-data/bitcoin/data/ ~/umbrel/
 ```
 
 We can now remove the node.
@@ -56,7 +56,7 @@ Now we can restore data.
 
 ```
 sudo rm -r ~/umbrel/app-data/btc-knots/data/
-mv data/ ~/umbrel/app-data/btc-knots/
+mv ~/umbrel/data/ ~/umbrel/app-data/btc-knots/
 ```
 
 We can now restart the node.
