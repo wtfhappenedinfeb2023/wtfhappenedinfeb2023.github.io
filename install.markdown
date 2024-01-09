@@ -7,10 +7,15 @@ layout: home
 
 ## Setup steps
 
+* [DIY node](#diy-node-steps)
 * [Umbrel](#umbrel-steps)
     * [if you don't have a node](#if-you-dont-have-a-node)
     * [if you already have a node](#if-you-already-have-a-node)
 * [Mynode](#mynode-steps)
+
+## DIY node steps
+
+If you have made your own node on linux, here is a simple and quick [guide](https://jesterhodl.com/raspibolt-replacing-bitcoin-core-with-knots/) to switch from Bitcoin Core to Bitcoin Knots.
 
 ## Umbrel steps
 
