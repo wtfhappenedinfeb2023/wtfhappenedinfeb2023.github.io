@@ -74,20 +74,20 @@ The two characteristics presented here are a simple way to recognize spam that m
 {: style="text-align: justify"}
 
 
-## Common misconceptions &#128169; around spam
+## Common misconceptions &#x1F6AB; around spam
 
-  * &#128169; [Mempool policy is censorship](#mempool-policy-is-censorship)
-  * &#128169; [A valid transaction is a valid transaction](#a-valid-transaction-is-a-valid-transaction)
-  * &#128169; [The fees were going to be high anyways](#the-fees-were-going-to-be-high-anyways)
-  * &#128169; [Satoshi inscribed on-chain so I should be able to do it too](#satoshi-inscribed-on-chain-so-i-should-be-able-to-do-it-too)
-  * &#128169; [Bitcoin can thrive even if miners are high-time preference greedy actors](#bitcoin-can-thrive-even-if-miners-are-high-time-preference-greedy-actors)
-  * &#128169; [There's nothing you can do about it](#theres-nothing-you-can-do-about-it)
-  * &#128169; [Fighting it will break Bitcoin](#fighting-spam-will-break-bitcoin)
-  * &#128169; [Making transactions more efficient on L1 will solve spam](#making-transactions-more-efficient-on-l1-will-solve-spam)
-  * &#128169; [High fees will solve spam](#high-fees-will-solve-spam)
-  * &#128169; [Everything is good for Bitcoin](#everything-is-good-for-bitcoin)
+  * &#x1F6AB; [Mempool policy is censorship](#mempool-policy-is-censorship)
+  * &#x1F6AB; [A valid transaction is a valid transaction](#a-valid-transaction-is-a-valid-transaction)
+  * &#x1F6AB; [The fees were going to be high anyways](#the-fees-were-going-to-be-high-anyways)
+  * &#x1F6AB; [Satoshi inscribed on-chain so I should be able to do it too](#satoshi-inscribed-on-chain-so-i-should-be-able-to-do-it-too)
+  * &#x1F6AB; [Bitcoin can thrive even if miners are high-time preference greedy actors](#bitcoin-can-thrive-even-if-miners-are-high-time-preference-greedy-actors)
+  * &#x1F6AB; [There's nothing you can do about it](#theres-nothing-you-can-do-about-it)
+  * &#x1F6AB; [Fighting it will break Bitcoin](#fighting-spam-will-break-bitcoin)
+  * &#x1F6AB; [Making transactions more efficient on L1 will solve spam](#making-transactions-more-efficient-on-l1-will-solve-spam)
+  * &#x1F6AB; [High fees will solve spam](#high-fees-will-solve-spam)
+  * &#x1F6AB; [Everything is good for Bitcoin](#everything-is-good-for-bitcoin)
 
-### &#128169; Mempool policy is censorship
+### &#x1F6AB; Mempool policy is censorship
 
 The statement implies that any policy applied to your mempool, which temporarily stores unconfirmed transactions in your Bitcoin node before they're added to blocks, is a form of censorship. However, this argument is wrong because **mempool and relay are not forced on you by anyone and are not enforced over the whole network under threat**; instead, they only allow you to **take control over your own mempool** and relay policies to prioritize or refuse to store or relay certain types of transactions. This is the **opposite of censorship**, this is what sovereignty means. This set of rules can be defined through your `bitcoin.conf` file to describe **what a valid transaction is from the point of view of your own mempool**.
 {: style="text-align: justify"}
@@ -108,7 +108,7 @@ In addition, other users are not entitled to your node's resources. If you choos
 **Running a node is an active process**. You might have been told that if "you're running a node, you're good", that is just the first step. Noderunners must remain ever-vigilant and ready to act in case of attack. This is effectively what makes Bitcoin anti-fragile. 
 {: style="text-align: justify"}
 
-### &#128169; A valid transaction is a valid transaction
+### &#x1F6AB; A valid transaction is a valid transaction
 
 Spam defenders will **often point to the fact that a spam transaction is valid**, in the eyes of the protocol, because it pays the required fee and respects the structure required by the protocol. Although this is true, it does not mean that the transaction cannot be a spam transaction. **By definition, spam will always be a valid transaction**, it would otherwise not be relayed through mempools and won't be included in a block. That does not mean that some valid transactions are not violating the two definitions [previously defined](#caracteristics-of-spam), meaning that the transaction can still waste the shared resources of the network and/or abuse one of Bitcoin's functions for a malicious intent.
 {: style="text-align: justify"}
@@ -123,7 +123,7 @@ Discussing **the validity of the transaction is not the issue** and participants
 Another important detail is that some of the spam from the current wave, mostly inscription-based spam, can be considered to not be paying a fair fee as it circumvents the fair fee market by injecting data into the segregated witness space in order to benefit from a x0.25 discount. This is not the case for bare multisig based spam or `OP_RETURN` based spam.
 {: style="text-align: justify"}
 
-### &#128169; The fees were going to be high anyways
+### &#x1F6AB; The fees were going to be high anyways
 
 Because Bitcoiners strongly believe that Bitcoin will be adopted by more users who see a need for Bitcoin's properties (citizens experiencing significant currency debasement, institutional users who require fast finality, users trying to circumvent capital controls, ...) combined with the choice to maintain a limited blocksize, there is a strong belief that **transaction fees will become prohibitive in the future**, excluding small users from ever using on-chain transactions. The hope is that Layer 2 solutions will be ready by then.
 {: style="text-align: justify"}
@@ -138,7 +138,7 @@ This second point can easily be understood whit a simple thought experiment:
 * In this case, the fees will necessary become high, but this situation will stop anyone else from transacting, stopping any real demand for Bitcoin's properties. The fees are high, yes, but would you still support a mitigation scheme to limit the reach of such an attack?
 {: style="text-align: justify"}
 
-### &#128169; Satoshi inscribed on-chain so I should be able to do it too
+### &#x1F6AB; Satoshi inscribed on-chain so I should be able to do it too
 
 A common argument presented by inscription supporters is that Satoshi themselves started the trends of injecting data in the timechain with the Genesis block message. This **argument is simply wrong since Satoshi did not subvert ([2nd characteristic of spam](#characteristics-of-spam)) the protocol to "inscribe" data**, they simply used space already available in the Coinbase data that is designed to allow miners to broadcast arbitrary data. **It's always been part of Bitcoin and didn't introduce any wastefulness.**  
 [More information here.](https://www.oreilly.com/library/view/mastering-bitcoin/9781491902639/ch08.html)
@@ -160,7 +160,7 @@ Inscriptions that are omni-present in the 2023 wave of spam basically have the s
 * Want to take control over your mempool's policies? You can easily do that by modifying your bitcoin.conf file. You can use the following tool, provided by [Jameson Lopp](https://jlopp.github.io/bitcoin-core-config-generator/) to easily create a bitcoin.conf file that applies the mempool and relay policies you'd like to apply to your node.
 * [More information about mempool policy and its role](https://bitcoin.stackexchange.com/questions/120269/what-is-mempool-policy)
 
-### &#128169; Bitcoin can thrive even if miners are high-time preference greedy actors
+### &#x1F6AB; Bitcoin can thrive even if miners are high-time preference greedy actors
 
 The popular notion that **miners are inherently selfish and solely driven by profit** has become a pervasive narrative within the Bitcoin community. The origin of this narrative is unknown and unclear. Originally, the Bitcoin whitepaper only mentions the term "greed" once, and that is in the case of an attacker. This belief is **not necessarily grounded in reality or based on sound reasoning**. In fact, it overlooks two crucial points: 
 1. Firstly, that miners **need Bitcoin to remain valuable and profitable over the long term** in order to recoup their investments and to have profitable businesses; 
@@ -187,7 +187,7 @@ Like I have an obligation to protect that. And so if I choose to protect it by *
 [Giacomo Zucco](https://x.com/giacomozucco?s=20) proposed a [more colorful version of this argument](https://twitter.com/i/status/1741172408919478412).
 
 
-### &#128169; There's nothing you can do about it
+### &#x1F6AB; There's nothing you can do about it
 
 A common argument presented by spammers and spam enablers is that spam should be forgotten about because nothing can be done about it. This argument is simply wrong. In the past, [spam has been stopped using filters and through the participation of miners](#counterparty). The arguments presented to argue that you shouldn't try to stop spam are divided into two categories:
 1. They can simply change a **technical detail of the data injection method and circumvent filters**, if filters is the method chosen to fight spam
@@ -225,7 +225,7 @@ Miners can try to put whatever they want in blocks, the only workaround nodes ha
 {: style="text-align: justify"}
 
 
-### &#128169; Making transactions more efficient on L1 will solve spam
+### &#x1F6AB; Making transactions more efficient on L1 will solve spam
 
 The argument in support of **UTXO aggregation** that suggests it can mitigate spam on the Bitcoin network is a compelling one. **Covenants**, which are a **type of script used to share UTXOs between users without requiring custodial services**, would make **monetary transactions more cost-effective** and thus **better equipped to compete against spam**. However, an important detail that needs to be acknowledged is that **covenants reduce the amount of fees miners receive**, which goes **against their economic incentives**. Lightning, a type of scaling solution, also falls into this category as it reduces miner fee income.
 {: style="text-align: justify"}
@@ -234,11 +234,11 @@ This argument presents an **apparent contradiction with the idea that spam filte
 The answer lies in the fact that spam filters, like CTV and Lightning, ultimately improve network efficiency, which will have a positive economic impact on miners as it increases the overall value of the Bitcoin network. Mining is not just about earning fees; it also involves securing the blockchain through mining work. By improving network efficiency, these solutions make it more profitable for miners to secure the chain and receive block rewards while reducing their dependence on transaction fees. As a result, they become economically beneficial for all parties involved - users, merchants, miners, and Bitcoin as a whole.
 {: style="text-align: justify"}
 
-### &#128169; High fees will solve spam
+### &#x1F6AB; High fees will solve spam
 
 No, high fees  haven't solved spam throughout 2023 and will not solve spam especially that it is underpriced under SegWit (see more: [delvingbitcoin.org/t/bug-spammers-get-bitcoin-blockspace-at-discounted-price-lets-fix-it/327](https://delvingbitcoin.org/t/bug-spammers-get-bitcoin-blockspace-at-discounted-price-lets-fix-it/327)). 
 
-### &#128169; Everything is good for Bitcoin
+### &#x1F6AB; Everything is good for Bitcoin
 
 This statement would mean that **Bitcoin is perfect and has no flaws or surface attack at all**. This will most likely **always be wrong**. The reason why everything is good for Bitcoin is that **Bitcoin can adapt**, thanks to its nodes allegedly, against attacks and defend itself that way. But this **requires an immune reaction that is currently considered as useless**.  
 Nothing is indestructible, nothing is perfect. Bitcoin need participants to actively defend it and address new attack vectors. That does not mean implementing soft-forks to defend against everything. Mempool policies, relay policies, long-term miner incentives, social campaigns, ... are all part of the toolkit that needs to be gradually deployed to defend the network. This toolkit can become increasingly more aggressive until the ultimate "*defense*", in the case of a miner concerted attack for example, where nodes would migrate to a new Proof-of-Work algorithm and reject SHA256 mined blocks for example.
