@@ -236,6 +236,8 @@ The answer lies in the fact that spam filters, like CTV and Lightning, ultimatel
 
 ### High fees will solve spam
 
+False. High Bitcoin fees don't stop spammers who have been the top payer for a year already. They increase their profit from clogging the Bitcoin network by exploitation of Segwit mispricing and other vulnerabilities that put genuine, monetary transactions at disadvantage.
+
 ### Everything is good for Bitcoin
 
 This statement would mean that **Bitcoin is perfect and has no flaws or surface attack at all**. This will most likely **always be wrong**. The reason why everything is good for Bitcoin is that **Bitcoin can adapt**, thanks to its nodes allegedly, against attacks and defend itself that way. But this **requires an immune reaction that is currently considered as useless**.  
