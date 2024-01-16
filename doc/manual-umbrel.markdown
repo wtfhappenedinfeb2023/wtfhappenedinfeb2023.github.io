@@ -8,10 +8,25 @@ layout: home
 
 In order to avoid a new long synchronization, we will save the data of your current node and then transfer it to the new one.
 
-Let's start by stopping the Bitcoin node:
+Let's start by stopping all container:
 
 ```
-sudo docker container stop bitcoin_i2pd_daemon_1 bitcoin_server_1 bitcoin_app_proxy_1 bitcoin_tor_1 bitcoin_bitcoind_1
+sudo docker stop $(sudo docker ps -q)
+```
+
+Create a backup folder:
+```
+mkdir ~/umbrel/backup
+```
+
+Move all files except the Bitcoin folder:
+```
+cp -r ~/umbrel/app-data/!(bitcoin) ~/umbrel/backup
+```
+
+Delete original files:
+```
+sudo rm -r ~/umbrel/app-data/!(bitcoin)
 ```
 
 Now let's move the chain to the root so that it is not deleted when deleting the old node.
@@ -59,10 +74,10 @@ sudo rm -r ~/umbrel/app-data/btc-knots/data/
 mv ~/umbrel/data/ ~/umbrel/app-data/btc-knots/
 ```
 
-We can now restart the node.
+We can now restart your computer:
 
 ```
-sudo docker container start btc-knots_server_1 btc-knots_bitcoind_1 btc-knots_i2pd_daemon_1 btc-knots_tor_1 btc-knots_app_proxy_1
+sudo shutdown -r now
 ```
 
 
