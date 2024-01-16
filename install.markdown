@@ -12,6 +12,7 @@ layout: home
     * [if you don't have a node](#if-you-dont-have-a-node)
     * [if you already have a node](#if-you-already-have-a-node)
 * [Mynode](#mynode-steps)
+* [Start9](#start9-steps)
 
 ## DIY node steps
 
@@ -22,7 +23,7 @@ If you have made your own node on linux, here is a simple and quick [guide](http
 ### if you don't have a node yet
 
 1. [install Umbrel](https://umbrel.com/umbrelos#install) 
-1. Install the alternative app store
+2. Install the alternative app store
     - Go to app store
     - click on ... in the top right corner
     - click on community app stores
@@ -78,10 +79,22 @@ see manual instruction [here](/doc/manual-umbrel.markdown).
 ## Mynode steps
 
 1. Connect to your mynode
-1. Go to settings
-1. Click on `Show upgrade logs`
-1. Go down to custom bitcoin version
-1. Selection ordisrespector with the desired version
-1. Click on install
+2. Go to settings
+3. Click on `Show upgrade logs`
+4. Go down to custom bitcoin version
+5. Selection ordisrespector with the desired version
+6. Click on install
+
+And there you go, you now have ordisrespector on your node.
+
+## Start9 steps
+
+On your start9 server:
+
+1. Download the package ([.s9pk](https://github.com/BitcoinMechanic/bitcoind-startos/releases/tag/v26))
+2. Now go to system -> sideload a service -> browse
+3. Select the .s9pk file
+4. Click on upload & install
+5. Click on Bitcoin Core -> configure -> save -> start
 
 And there you go, you now have ordisrespector on your node.
