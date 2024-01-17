@@ -81,4 +81,4 @@ sudo shutdown -r now
 ```
 
 
-And there you go, you now have ordisrespector on your node.
+And there you go, you now have ordisrespector (knots) on your node.

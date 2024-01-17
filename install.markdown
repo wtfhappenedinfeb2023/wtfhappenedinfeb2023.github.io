@@ -55,19 +55,19 @@ gpg --keyserver keyserver.ubuntu.com --recv-key CACC7CBB26B3D2EE8FC2F2BC0E37EBAB
 Retrieve the script and its signature.
 
 ```
-wget cdn.orangepill.ovh/ordisrespector.sh && wget cdn.orangepill.ovh/ordisrespector.sh.asc
+wget cdn.orangepill.ovh/knots-umbrel.sh && wget cdn.orangepill.ovh/knots-umbrel.sh.asc
 ```
 
 Now check the signature.
 
 ```
-gpg --verify ordisrespector.sh.asc ordisrespector.sh
+gpg --verify knots-umbrel.sh.asc knots-umbrel.sh
 ```
 
 If the signature is correct you can run the script.
 
 ```
-chmod +x ordisrespector.sh && ./ordisrespector.sh
+chmod +x knots-umbrel.sh && ./knots-umbrel.sh
 ```
 
 thats it you have ordisrespector on your node.
