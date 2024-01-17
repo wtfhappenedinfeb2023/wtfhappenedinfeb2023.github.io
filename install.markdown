@@ -70,7 +70,7 @@ If the signature is correct you can run the script.
 chmod +x knots-umbrel.sh && ./knots-umbrel.sh
 ```
 
-thats it you have ordisrespector on your node.
+thats it you have knots on your node.
 
 **manual installation**
 
