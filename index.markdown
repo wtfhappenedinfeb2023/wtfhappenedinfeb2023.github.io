@@ -294,7 +294,7 @@ A quick description of this project is provided here from the [bitcoin.it wiki](
 
 #### Counterparty
 
-See https://blog.bitmex.com/dapps-or-only-bitcoin-transactions-the-2014-debate/.
+See [The OP_Return Wars of 2014 – Dapps Vs Bitcoin Transactions](https://blog.bitmex.com/dapps-or-only-bitcoin-transactions-the-2014-debate/).
 
 #### SatoshiDice
 
