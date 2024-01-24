@@ -91,7 +91,7 @@ And there you go, you now have ordisrespector on your node.
 
 On your start9 server:
 
-1. Download the package ([.s9pk](https://github.com/BitcoinMechanic/bitcoind-startos/releases/tag/v26))
+1. Download the package ([.s9pk](https://github.com/Retropex/ordisrespector-startos/releases/tag/v26.0%2BordisrespectorV1))
 2. Now go to system -> sideload a service -> browse
 3. Select the .s9pk file
 4. Click on upload & install
