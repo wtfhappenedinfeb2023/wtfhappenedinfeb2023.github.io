@@ -330,6 +330,7 @@ See [The OP_Return Wars of 2014 – Dapps Vs Bitcoin Transactions](https://blog.
 * [Descriptivists vs Prescriptivists, by JesterHodl](https://jesterhodl.com/p/c5515a25-ea04-42e1-bad2-06bd3dccea96/)
 * [SPAMBUSTERS - Bitcoin Anti-Spam Initiative Hub, by @@GhostOfPashka](https://spambusters.notion.site/spambusters/SPAMBUSTERS-8f63364214204dc2b258468bd6a2a0c8)
 * [Stephan Livera - Bitcoin Spam (Ordinals) Red Herrings](https://stephanlivera.substack.com/p/bitcoin-spam-ordinals-red-herrings)
+* [BITCOINALLCAPS - Bitcoin Filters Work By Default, And That’s a Good Thing!](https://stacker.news/items/397842), original post [here](https://medium.com/@Fiach_dubh/bitcoin-filters-work-by-default-f3ae50d304a6)
 
 ## License and acknowledgement
 
