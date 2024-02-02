@@ -325,6 +325,14 @@ See [The OP_Return Wars of 2014 – Dapps Vs Bitcoin Transactions](https://blog.
 
 #### SatoshiDice
 
+#### Omni
+
+[Dominating OP Returns: The Impact of Omni and Veriblock on Bitcoin]([url](https://www.researchgate.net/publication/346962427_Dominating_OP_Returns_The_Impact_of_Omni_and_Veriblock_on_Bitcoin))
+
+#### Veriblock
+
+Ibid.
+
 ## Articles and content about the issue
 
 * [Descriptivists vs Prescriptivists, by JesterHodl](https://jesterhodl.com/p/c5515a25-ea04-42e1-bad2-06bd3dccea96/)
