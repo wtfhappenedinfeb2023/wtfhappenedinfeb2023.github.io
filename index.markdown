@@ -321,9 +321,11 @@ A quick description of this project is provided here from the [bitcoin.it wiki](
 
 #### Counterparty
 
-See [The OP_Return Wars of 2014 – Dapps Vs Bitcoin Transactions](https://blog.bitmex.com/dapps-or-only-bitcoin-transactions-the-2014-debate/).
+See [The OP_Return Wars of 2014 – Dapps Vs Bitcoin Transactions](https://blog.bitmex.com/dapps-or-only-bitcoin-transactions-the-2014-debate/) and [Developers Battle Over Bitcoin Block Chain](https://www.reddit.com/r/Bitcoin/comments/21b4pm/developers_battle_over_bitcoin_block_chain/).
 
 #### SatoshiDice
+
+[Do you think SatoshiDice is blockchain spam? Drop their TX's - Solution inside](https://bitcointalk.org/index.php?topic=150405.0).
 
 #### Omni
 
