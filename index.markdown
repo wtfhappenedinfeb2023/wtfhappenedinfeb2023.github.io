@@ -295,7 +295,7 @@ It is true though that if it's a full node, it could at least help someone synch
 
 ### As a pleb
 
-* Be vocal about your concerns, join discussions<sup>[[1](https://delvingbitcoin.org/t/bug-spammers-get-bitcoin-blockspace-at-discounted-price-lets-fix-it/327)] </sup><sup>,[[2](https://github.com/bitcoin/bitcoin/issues/29187)]</sup>, ask questions, share knowledge. Remember that discussions are not always there to persuade the detractor, but to form an opinion of observers. Your voice **is** the market force.
+* Be vocal about your concerns, join discussions<sup>[[1](https://delvingbitcoin.org/t/bug-spammers-get-bitcoin-blockspace-at-discounted-price-lets-fix-it/327)] </sup><sup>,[[2](https://github.com/bitcoin/bitcoin/issues/29187)] </sup><sup>[[3](https://bitcoin.stackexchange.com/questions/121734/why-cant-nodes-have-the-relay-option-to-disallow-certain-transaction-types)]</sup>, ask questions, share knowledge. Remember that discussions are not always there to persuade the detractor, but to form an opinion of observers. Your voice **is** the market force.
 
 ## A brief history of spam in the Bitcoin network
 
