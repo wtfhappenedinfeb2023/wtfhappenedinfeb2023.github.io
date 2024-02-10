@@ -26,6 +26,17 @@ layout: home
 
 If you are already convinced of why you should stop spam, you can go directly to the [installation instructions page](/install.markdown).
 
+### Videos
+
+[@LukeDashjr](https://twitter.com/LukeDashjr) interview:
+
+<iframe width="280" height="158" src="https://www.youtube.com/embed/OpbDWCwJ_5Y?si=9Mp4feEGcgCCRRCU&amp;start=506" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+[@giacomozucco](https://twitter.com/giacomozucco) interview:
+
+<iframe width="280" height="158" src="https://www.youtube.com/embed/OpbDWCwJ_5Y?si=-TdOB7tkIqK0YusF&amp;start=3440" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Stats about non-payment transactions
 
 ### mempool.space's transactions by fee rate since 2020
