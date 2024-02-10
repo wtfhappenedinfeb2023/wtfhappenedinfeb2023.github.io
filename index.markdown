@@ -353,6 +353,7 @@ Ibid.
 * [SPAMBUSTERS - Bitcoin Anti-Spam Initiative Hub, by @@GhostOfPashka](https://spambusters.notion.site/spambusters/SPAMBUSTERS-8f63364214204dc2b258468bd6a2a0c8)
 * [Stephan Livera - Bitcoin Spam (Ordinals) Red Herrings](https://stephanlivera.substack.com/p/bitcoin-spam-ordinals-red-herrings)
 * [BITCOINALLCAPS - Bitcoin Filters Work By Default, And That’s a Good Thing!](https://stacker.news/items/397842), original post [here](https://medium.com/@Fiach_dubh/bitcoin-filters-work-by-default-f3ae50d304a6)
+* [CVE-2023-50428](https://nvd.nist.gov/vuln/detail/CVE-2023-50428)
 
 ## License and acknowledgement
 
