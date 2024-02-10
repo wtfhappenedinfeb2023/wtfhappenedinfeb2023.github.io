@@ -336,7 +336,7 @@ See [The OP_Return Wars of 2014 – Dapps Vs Bitcoin Transactions](https://blog.
 
 #### SatoshiDice
 
-[Do you think SatoshiDice is blockchain spam? Drop their TX's - Solution inside](https://bitcointalk.org/index.php?topic=150405.0).
+[Do you think SatoshiDice is blockchain spam? Drop their TX's - Solution inside](https://bitcointalk.org/index.php?topic=150405.0). SatoshiDice spam in mempools was the primary concern. Unlike other types of spam, SatoshiDice didn't append arbitrary data to transactions recorded in the main chain. 
 
 #### Omni
 
