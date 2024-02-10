@@ -4,6 +4,7 @@
 
 layout: home
 ---
+<script defer data-domain="wtfhappenedinfeb2023.github.io" src="http://analytics.orangepill.ovh/js/script.js"></script>
 
 * [Stats about non-payment transactions](#stats-about-non-payment-transactions)
 * [Characteristics of spam](#characteristics-of-spam)
