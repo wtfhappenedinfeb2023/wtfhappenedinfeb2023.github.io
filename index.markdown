@@ -364,6 +364,14 @@ Ibid.
 <iframe width="480" height="270" src="https://www.youtube.com/embed/OpbDWCwJ_5Y?si=-TdOB7tkIqK0YusF&amp;start=3440" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
+## Quotes
+
+"_(...) people really don't like this [NFT, Ordinals] and I apologize because they are kind of my fault that all that script limit relaxation I was talking about for TapRoot - that's why we can do it. (...) relaxing this script limits (...) makes one particular form of data stuffing possible._" - Andrew Poelstra, 2023 August 28 , [Stephan Livera Podcast episode 507](https://youtu.be/PrUr2zwff_0?t=3040).
+
+"_(...) There's a reasonable argument that this sort of data is toxic to the network, since even though "the market is willing to bear" the price of scares blockspace, if people were storing NFTs and other crap on the chain, then the Bitcoin fee market would become entangled with random pump&dump markets, undermining legitimate use cases and potentially preventing new technology like LN from gaining a strong foothold. (...)_" - Andrew Poelstra, 2023 January 27, [Bitcoin-dev mailing list](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2023-January/021372.html).
+
+"_The best scaling solution is a chain without spam._" - Greg Tonoski, 2024 January 30, [Twitter](https://twitter.com/GregTonoski/status/1752388066063307183).
+
 ## License and acknowledgement
 
 * MrGnome for the rigorous review
