@@ -21,21 +21,11 @@ layout: default
 * [What can you do about it](#what-can-you-do-about-it)
   * [Detailed installation instructions](/install)
 * [A brief history of spam in the Bitcoin network](#a-brief-history-of-spam-in-the-bitcoin-network)
+* [Articles and content about the issue](#articles-and-content-about-the-issue)
 
 ### Note
 
 If you are already convinced of why you should stop spam, you can go directly to the [installation instructions page](/install.markdown).
-
-### Videos
-
-[@LukeDashjr](https://twitter.com/LukeDashjr) interview:
-
-<iframe width="280" height="158" src="https://www.youtube.com/embed/OpbDWCwJ_5Y?si=9Mp4feEGcgCCRRCU&amp;start=506" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-[@giacomozucco](https://twitter.com/giacomozucco) interview:
-
-<iframe width="280" height="158" src="https://www.youtube.com/embed/OpbDWCwJ_5Y?si=-TdOB7tkIqK0YusF&amp;start=3440" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Stats about non-payment transactions
 
@@ -210,7 +200,7 @@ A common argument presented by spammers and spam enablers is that spam should be
    {: style="text-align: justify"}
 
 The second argument was [already addressed and won't be discussed again here](#bitcoin-can-thrive-even-if-miners-are-high-time-preference-greedy-actors).  
-Regarding the first one, an important point about it is that it is a **purely technical argument**. However, spamming is not only a technical issue. **Spammers are ready to pay high TX fees to get their spam into blocks mainly because they are hoping to make a profit out of the spam**. The profits made by spammers **rely on a network effect around the standard they adopted to spam**. That is partly why spamming using **extremely inefficient data storage methods** continues to be dominant although more efficient "standards" to store data on-chain have been proposed. Updating default filters s**ends a strong message to signify that certain data injection methods are not desirable** and that **actors who rely on them are using non-desirable methods**. Simply updating default filters in the past has worked, but for reasons unclear, Bitcoin Core developers have refused to consider spam as a significant issue since Taproot and did not take any action at all to update default filters.  
+Regarding the first one, an important point about it is that it is a **purely technical argument**. However, spamming is not only a technical issue. **Spammers are ready to pay high TX fees to get their spam into blocks mainly because they are hoping to make a profit out of the spam**. The profits made by spammers **rely on a network effect around the standard they adopted to spam**. That is partly why spamming using **extremely inefficient data storage methods** continues to be dominant although more efficient "standards" to store data on-chain have been proposed. Updating default filters **sends a strong message to signify that certain data injection methods are not desirable** and that **actors who rely on them are using non-desirable methods**. Simply updating default filters in the past has worked, but for reasons unclear, Bitcoin Core developers have refused to consider spam as a significant issue since Taproot and did not take any action at all to update default filters.  
 Breaking the network effect of a certain "standard" of spam is critical as **it forces spammers to adopt a new standard** and resets the whole process of **building an eco-system and creating a community around it**. This also sends a strong signal to [external sources of funding that might want to support spammers](https://x.com/PrinceySOV/status/1740821876992344352?s=20) that future investments are at risk of being rejected by the network at any moment.
 {: style="text-align: justify"}
 
@@ -221,11 +211,19 @@ If spammers eventually make spam so efficient that it becomes **indistinguishabl
 Interestingly, spammers also propose that financial transactions should be updated to "*improve the incentives and infrastructure for the transactions you DO want to see*", namely Bitcoin currency transactions. This **obviously contradicts the narrative discussed here**, as it means that **something can be done**, as long as it is what the spammers want you to do. It is the only way to solve this issue according to them. The changes hinted at by spammers are significant as they would require a soft or hard-fork in order to make the native currency, bitcoins, of the network better compete with spam (which is a nonsense as Bitcoin currency transactions are much more efficient). At the same time, spammers insist that nothing can be done and that a kind of significant update is necessary. 
 {: style="text-align: justify"}
 
+Watch [@LukeDashjr](https://twitter.com/LukeDashjr)'s interview during which he explains why although spam filters won't definitely stop spam in one day they are a necessary first step in the social consensus to eventually do so:
+
+<div align="center">
+<iframe width="480" height="270" src="https://www.youtube.com/embed/OpbDWCwJ_5Y?si=9Mp4feEGcgCCRRCU&amp;start=510" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share display:block;" allowfullscreen></iframe>
+</div>
+
 #### The 100 sats TX challenge
 
 [Francis Pouliot](https://twitter.com/francispouliot) proposed a simple challenge to prove that **some things can be done and that one of those things is simply introducing filters**. In a tweet, he challenged someone claiming that "*spam filters don't work*", meaning that mempool policies don't work - see [Mempool policy is censorship](#mempool-policy-is-censorship), to **send 100 sats to a specific address**.  
 
+<div align="center">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Please send 100 sats to this address<br><br>bc1qc3qlmus3udzwrfxtkja8upe33jvlydwy2cjr96</p>&mdash; FRANCIS - BULLBITCOIN.COM (@francispouliot_) <a href="https://twitter.com/francispouliot_/status/1743704660123308387?ref_src=twsrc%5Etfw">January 6, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 This challenge aims at showing that filters do work because Bitcoin Core currently has a default dust filter that makes it very hard to get a 100 sats transaction relayed.
 {: style="text-align: justify"}
@@ -237,7 +235,9 @@ One of the participants to the conversation who accepted to take on the challeng
 The transaction will eventually make it through, but it required colluding with a miner that's willing to take it Out of Band, outside of the mempool, and that strongly limited the reach of the transaction since only a single pool is working on it which relegates it to the next block found by that pool. Currently, spam is mined by all miners which makes it present in blocks.  
 {: style="text-align: justify"}
 
+<div align="center">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">lmao they are literally proving how effective spam filters are in real time<br><br>instead of confirming in 10 minutes, my math shows there&#39;s a 50% chance of the spam transactions getting mined in the next 6.5 hours. And it cost more.<br><br>Huge L for spam apologists, down bad</p>— Asher Hopp (@AsherHopp) <a href="https://twitter.com/AsherHopp/status/1743765222987534696?ref_src=twsrc%5Etfw">January 6, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 Miners can try to put whatever they want in blocks, the only workaround nodes have against that is to reject a valid block (meaning that it has a valid Proof-of-Work that answers the Difficulty condition) that contains some transactions or data proposed by a miner.  
 {: style="text-align: justify"}
@@ -263,8 +263,9 @@ Some supporters of spam and scaling solutions have even gone as far as explainin
 The following thread by [@KLoaec](https://x.com/KLoaec/status/1747958496883003800?s=20), [Wizard Sardine's](https://wizardsardine.com/) CEO - the developers of the super interesting [Liana wallet](https://wizardsardine.com/liana/) that already offers time-locks and recovery options akin to vaults, has an underrated thread about this subject:
 {: style="text-align: justify"}
 
+<div align="center">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you needed Vaults so bad, you would already use some.<br>Sure, UX without covenants is a massive pain, but if it&#39;s enough to deter 100% of people and companies, maybe it&#39;s not that &quot;needed&quot; after all.<br>Don&#39;t get me wrong, as a builder on later 1, I absolutely want covenants. 1/5</p>&mdash; Kevin Loaec 🧙‍♂️🐟 (@KLoaec) <a href="https://twitter.com/KLoaec/status/1747958496883003800?ref_src=twsrc%5Etfw">January 18, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+</div>
 
 ### High fees will solve spam
 
@@ -310,14 +311,16 @@ It is true though that if it's a full node, it could at least help someone synch
 
 ## A brief history of spam in the Bitcoin network
 
-### Free relays > Whitelits > Free relays
+### Free relays > Whitelists > Free relays
 
 * It appears that Satoshi initially wanted to develop and allow for many types of TXs on Bitcoin
 * However, he was at some point convinced by Gavin Andresen that was a slippery slope and opened the doors to DDos attacks
 * Satoshi then moved back to a whitelist model that only allowed certain types of OP_CODES and TXs on Bitcoin
 * Under the pressure of some miners who decided to mine any type of TXs, the whitelist model was then abandoned again
 
+<div align="center">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Admittedly, that was largely my fault.<br><br>In 2011, I started the &quot;Free transaction relay policy&quot;/network removing most (all?) policy restrictions.<br>Eligius also would mine any transaction indiscriminately.</p>&mdash; Luke Dashjr (@LukeDashjr) <a href="https://twitter.com/LukeDashjr/status/1743380615171547197?ref_src=twsrc%5Etfw">January 5, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 ### Noteworthy cases of massive broadcasts of non-payment TXs
 
@@ -349,10 +352,15 @@ Ibid.
 ## Articles and content about the issue
 
 * [Descriptivists vs Prescriptivists, by JesterHodl](https://jesterhodl.com/p/c5515a25-ea04-42e1-bad2-06bd3dccea96/)
-* [SPAMBUSTERS - Bitcoin Anti-Spam Initiative Hub, by @@GhostOfPashka](https://spambusters.notion.site/spambusters/SPAMBUSTERS-8f63364214204dc2b258468bd6a2a0c8)
+* [SPAMBUSTERS - Bitcoin Anti-Spam Initiative Hub, by @GhostOfPashka](https://spambusters.notion.site/spambusters/SPAMBUSTERS-8f63364214204dc2b258468bd6a2a0c8)
 * [Stephan Livera - Bitcoin Spam (Ordinals) Red Herrings](https://stephanlivera.substack.com/p/bitcoin-spam-ordinals-red-herrings)
 * [BITCOINALLCAPS - Bitcoin Filters Work By Default, And That’s a Good Thing!](https://stacker.news/items/397842), original post [here](https://medium.com/@Fiach_dubh/bitcoin-filters-work-by-default-f3ae50d304a6)
 * [CVE-2023-50428](https://nvd.nist.gov/vuln/detail/CVE-2023-50428)
+* [@giacomozucco](https://twitter.com/giacomozucco) explain what spam is, why filtering is worth trying but not a panacea and why spam is not bringing back builders to Bitcoin:
+
+<div align="center">
+<iframe width="480" height="270" src="https://www.youtube.com/embed/OpbDWCwJ_5Y?si=-TdOB7tkIqK0YusF&amp;start=3440" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 ## License and acknowledgement
 
