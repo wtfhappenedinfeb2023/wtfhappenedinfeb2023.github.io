@@ -35,6 +35,8 @@ If you are already convinced of why you should stop spam, you can go directly to
 
 *A clear increase in transactions entering mempool.space can be seen starting February 2023. Until today, such increases are usually only experienced by the network during the so-called "bull runs", making this one a noticeable anomaly. [mempool.space](https://mempool.space/graphs/mempool#3y)*
 
+* Wanna see what a spam-free mempool looks like? [Take a look at this one](https://clean-mempool.bitcoinbarcelona.xyz/), hosted by [@oomahq](https://twitter.com/oomahq)
+
 ### space occupied by non-payments VS payments on the timechain since January 2023
 
 <iframe src="https://dune.com/embeds/3307069/5538577/" width="850" height="280" style="display:block; margin: 0 auto;"></iframe>
