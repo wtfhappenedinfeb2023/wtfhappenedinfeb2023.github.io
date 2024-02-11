@@ -49,7 +49,7 @@ If you are already convinced of why you should stop spam, you can go directly to
 
 ### size of UTXO since January 2023
 
-![Evolution of UTXO set size](/assets/utxo_set.png){: width="850" }{:.centered}
+<iframe src="https://statoshi.info/d-solo/000000009/unspent-transaction-output-set?orgId=1&refresh=5s&from=1672527600000&to=1707652688705&panelId=8" width="450" height="200" frameborder="0"></iframe>
 
 *The size of the UTXO set, number of unspent UTXO outputs, has seen a drastic increase since the beginning of the 2023 spam wave. This is partially due to Inscriptions/BRC-20 but mainly due to spam that relies on bare-multisig data to store data on the timechain. [UTXO set size](https://statoshi.info/d/000000009/unspent-transaction-output-set?orgId=1&refresh=5s&from=now-2y&to=now)*
 
