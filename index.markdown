@@ -38,11 +38,15 @@ If you are already convinced of why you should stop spam, you can go directly to
 
 ![fees paid by by non-payments VS payments on the timechain since January 2023](/assets/BTCspamanalaysis_perc_space.png){: width="850" }{:.centered}
 
+<iframe src="https://dune.com/embeds/3307069/5538577/" width="850" height="280" style="display:block; margin: 0 auto;"></iframe>
+
 *Soon after the beginning of the 2023 spam wave, non-financial transactions have been occupying about 50% of the available blockspace, except during short breaks. This chart does not consider data storage transactions that use bare multisig. [BTC spam analysis](https://dune.com/piratebiscuit/btc-spam-analysis)*
 
 ### fees paid by by non-payments VS payments on the timechain since January 2023
 
 ![fees paid by by non-payments VS payments on the timechain since January 2023](/assets/BTCspamanalaysis_perc_fees.png){: width="850" }{:.centered}
+
+<iframe src="https://dune.com/embeds/3307069/5538533/" width="850" height="280" style="display:block; margin: 0 auto;"></iframe>
 
 *Although non-payment related transactions occupy about 50% of each block, the majority of the fees paid in each block are still coming from payments. This data shows how non-payment transactions (spam) are displacing payment transactions, this is forcing non-payment transactions to pay a much higher fee to be included in blocks. [BTC spam analysis](https://dune.com/piratebiscuit/btc-spam-analysis)*
 
