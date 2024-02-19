@@ -277,6 +277,15 @@ The following thread by [@KLoaec](https://x.com/KLoaec/status/174795849688300380
 
 False. High Bitcoin fees don't stop spammers who have been the top payer for a year already. They increase their profit from clogging the Bitcoin network by exploitation of Segwit mispricing and other vulnerabilities that put genuine, monetary transactions at disadvantage.
 
+While it is true that spammers make short-lived attempts to profit, the history shows that they keep repeating them. Their payoff depends on collection of money from gullible or over-excited fools and therefore is insensitive to level of Bitcoin transaction fee. The playbook looks almost the same every time:
+1) Raise funds for the operation (typically from so-called venture capital),
+2) Create something to gamble with. Advertise it leveraging (industry-specific) media, brands, influential figures etc. claiming it to be interesting art or technology,
+3) Collect money from gullible or over-excited fools.
+4) Repeat.
+Transaction fees impact on spammers profit is negligable because it is small minority of money collected from gullible or over-excited fools. Spammers spend probably more on advertisment. They never spam without pushing narritive and providing excuses, e.g. "those cats on JPEGs are art". Spamming with random data would surely not be profitable. 
+
+In consequence of high fees Bitcoin is less decentralized. There are more and more coins (so-called unspendable or uneconomical UTXOs) with amount smaller than the spam-inflated fee to transact. Majority of independent individuals are blocked from participation in the network while a few privilaged ones gain exclusive access (power) and take control over Bitcoin. Segwit mispricing and other vulnerabilities makes it cheaper to seize control and keep it. They may be exploited (and fees remain high) as long as the struggle for power lasts.
+
 ### Everything is good for Bitcoin
 
 This statement would mean that **Bitcoin is perfect and has no flaws or surface attack at all**. This will most likely **always be wrong**. The reason why everything is good for Bitcoin is that **Bitcoin can adapt**, thanks to its nodes allegedly, against attacks and defend itself that way. But this **requires an immune reaction that is currently considered as useless**.  
