@@ -78,6 +78,8 @@ see manual instruction [here](/doc/manual-umbrel.markdown).
 
 ## Mynode steps
 
+You must have at least version [v0.3.10](https://github.com/mynodebtc/mynode/blob/776ccb35d1939b76de429dd129247425cd911f17/CHANGELOG#L4)
+
 1. Connect to your mynode
 2. Go to settings
 3. Click on `Show upgrade logs`
