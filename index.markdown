@@ -283,7 +283,7 @@ While it is true that spammers make short-lived attempts to profit, the history 
 3. Collect money (in excess of Bitcoin transaction fees) from gullible or over-excited people duped into "investing" in faked art or technology (so-called bag holders).
 4. Repeat.
 
-Cost of Bitcoin transaction fees does not impact profitability because it is negligible in comparison to amount of money collected from gullible or over-excited people. Spammers seem to spend much more on advertisment and never spam without pushing narratives that provide excuses, e.g. "those cats in JPEGs are art". Spamming with random data would surely not be profitable. 
+Cost of Bitcoin transaction fees does not impact profitability because proceeds are much larger. Victims transfer money in amounts that exceed the fees and ad campaigns. Spammers never spam without pushing narratives that provide excuses, e.g. "those cats in JPEGs are art". Spamming with random data would not be profitable.
 
 In consequence of high fees Bitcoin is less decentralized. There are more and more "uneconomical UTXOs" with amounts that are not sufficient to cover the spam-inflated fee to transact. They are effectively removed from circulation. Their owners can't partipate in the network while a few privilaged ones gain exclusive access (power) what adversely affects decentralization. Segwit mispricing and other vulnerabilities make it cheaper to keep the barrier and concentrate power in fewer and fewer hands. They may be exploited (and fees remain high) as long as the struggle for power lasts.
 
