@@ -13,6 +13,7 @@ layout: home
     * [if you already have a node](#if-you-already-have-a-node)
 * [Mynode](#mynode-steps)
 * [Start9](#start9-steps)
+* [brew](#brew-steps)
 
 ## DIY node steps
 
@@ -100,3 +101,10 @@ On your start9 server:
 5. Click on Bitcoin Core -> configure -> save -> start
 
 And there you go, you now have ordisrespector on your node.
+
+## brew steps
+
+```bash
+brew tap retropex/knots
+brew install knots
+```
