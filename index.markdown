@@ -287,13 +287,15 @@ While it is true that spammers make short-lived attempts to profit, the history 
 
 Cost of Bitcoin transaction fees does not impact profitability because proceeds are much larger. Victims transfer money in amounts that exceed the fees and ad campaigns. Spammers never spam without pushing narratives that provide excuses, e.g. "those cats in JPEGs are art". Spamming with random data would not be profitable.
 
-In consequence of high fees Bitcoin is less decentralized. There are more and more "uneconomical UTXOs" with amounts that are not sufficient to cover the spam-inflated fee to transact. They are effectively removed from circulation. Their owners can't partipate in the network while a few privilaged ones gain exclusive access (power) what adversely affects decentralization. Segwit mispricing and other vulnerabilities make it cheaper to keep the barrier and concentrate power in fewer and fewer hands. They may be exploited (and fees remain high) as long as the struggle for power lasts.
+In consequence of high fees Bitcoin is less decentralized. There are more and more "uneconomical UTXOs" with amounts that are not sufficient to cover the spam-inflated fee to transact. They are effectively removed from circulation. Their owners can't participate in the network while a few privileged ones gain exclusive access (power) what adversely affects decentralization. Segwit mispricing and other vulnerabilities make it cheaper to keep the barrier and concentrate power in fewer and fewer hands. They may be exploited (and fees remain high) as long as the struggle for power lasts.
 
 ### Everything is good for Bitcoin
 
 This statement would mean that **Bitcoin is perfect and has no flaws or surface attack at all**. This will most likely **always be wrong**. The reason why everything is good for Bitcoin is that **Bitcoin can adapt**, thanks to its nodes allegedly, against attacks and defend itself that way. But this **requires an immune reaction that is currently considered as useless**.  
 Nothing is indestructible, nothing is perfect. Bitcoin needs participants to actively defend it and address new attack vectors. That does not mean implementing soft-forks to defend against everything. Mempool policies, relay policies, long-term miner incentives, social campaigns, ... are all part of the toolkit that needs to be gradually deployed to defend the network. This toolkit can become increasingly more aggressive until the ultimate "*defense*", in the case of a miner concerted attack for example, where nodes would migrate to a new Proof-of-Work algorithm and reject SHA256 mined blocks for example.
 {: style="text-align: justify"}
+
+##
 
 ## What can you do about it?
 
@@ -342,7 +344,19 @@ It is true though that if it's a full node, it could at least help someone synch
 
 ### The rise of Out Of Band transactions
 
+The 22nd of February, [Marathon](https://x.com/MarathonDH?s=20), a US based miner that holds around 25 exahash (March 2024) officially launched a service designed to allow anyone to directly submit transactions to them, completely circumventing mempools and relay policies.  
+{: style="text-align: justify"}
 
+<div align="center">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Introducing Slipstream: a direct transaction submission service on <a href="https://twitter.com/hashtag/Bitcoin?src=hash&amp;ref_src=twsrc%5Etfw">#Bitcoin</a>, powered by Marathon. <a href="https://t.co/nGWuJukxij">pic.twitter.com/nGWuJukxij</a></p>&mdash; Marathon Digital Holdings (NASDAQ: MARA) (@MarathonDH) <a href="https://twitter.com/MarathonDH/status/1760760058281910309?ref_src=twsrc%5Etfw">February 22, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+This service mainly targets Non Standard transactions. For example, it was used to mine block (832,849)[https://mempool.space/block/00000000000000000000e37d10aa5a5ece8dba4a20f011280ae3d1880414ff7e] which is th biggest block to date (3.99 MB). It only contains 7 transactions, among which a single one (an Inscription) occupies most of the block.
+{: style="text-align: justify"}
+
+![Block 832,849](/assets/marathon_block.png){: width="100%" }{:.centered}
+
+A block containing 3097 transactions shared to the mempool was expected instead of this one.
 
 ### Noteworthy cases of massive broadcasts of non-payment TXs
 
