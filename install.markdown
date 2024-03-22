@@ -8,6 +8,7 @@ layout: home
 ## Setup steps
 
 * [DIY node](#diy-node-steps)
+* [APT](#apt-steps)
 * [Umbrel](#umbrel-steps)
     * [if you don't have a node](#if-you-dont-have-a-node)
     * [if you already have a node](#if-you-already-have-a-node)
@@ -18,6 +19,26 @@ layout: home
 ## DIY node steps
 
 If you have made your own node on linux, here is a simple and quick [guide](https://jesterhodl.com/raspibolt-replacing-bitcoin-core-with-knots/) to switch from Bitcoin Core to Bitcoin Knots.
+
+## APT steps
+
+1. Get Léo Haf's key and add it to the `apt` key list:
+
+```bash
+wget --quiet -O - https://apt.orangepill.ovh/gpg-pubkey.asc | sudo tee /etc/apt/keyrings/leohaf.asc
+```
+
+2. Add the repository to your `apt` repository list and indicate the GPG key to use:
+
+```bash
+echo "deb [signed-by=/etc/apt/keyrings/leohaf.asc arch=$(dpkg --print-architecture)] https://apt.orangepill.ovh stable main" | sudo tee /etc/apt/sources.list.d/bitcoin-knots.list
+```
+
+3. Update `apt` and install Bitcoin Knots:
+
+```bash
+sudo apt update && sudo apt install bitcoin-knots
+```
 
 ## Umbrel steps
 
@@ -39,7 +60,7 @@ To start you will have to connect to your umbrel using `ssh`, there are a lot of
 
 If you have installed umbrelOS on a raspberry PI 4 here is the command needed:
 
-```
+```bash
 ssh -t umbrel@umbrel.local
 ```
 
@@ -49,25 +70,25 @@ You will be asked for a password, it is the same one you use to connect with the
 
 Get [Léo Haf's](https://twitter.com/leo_haf) key.
 
-```
+```bash
 gpg --keyserver keyserver.ubuntu.com --recv-key CACC7CBB26B3D2EE8FC2F2BC0E37EBAB8574F005
 ```
 
 Retrieve the script and its signature.
 
-```
+```bash
 wget cdn.orangepill.ovh/knots-umbrel.sh && wget cdn.orangepill.ovh/knots-umbrel.sh.asc
 ```
 
 Now check the signature.
 
-```
+```bash 
 gpg --verify knots-umbrel.sh.asc knots-umbrel.sh
 ```
 
 If the signature is correct you can run the script.
 
-```
+```bash
 chmod +x knots-umbrel.sh && ./knots-umbrel.sh
 ```
 
