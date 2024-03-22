@@ -22,6 +22,8 @@ If you have made your own node on linux, here is a simple and quick [guide](http
 
 ## APT steps
 
+This steps work on Debian and Ubuntu.
+
 1. Get Léo Haf's key and add it to the `apt` key list:
 
 ```bash
