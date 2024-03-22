@@ -25,7 +25,6 @@ layout: default
 
 ### Note
 
-Some may not already know this but there has always been spam policy filters running on Bitcoin, even since the very first versions of Bitcoin software. [These filters have always been improved over time, except since the Taproot update](https://en.bitcoin.it/wiki/Spam_transactions).  
 If you are already convinced of why you should stop spam, you can go directly to the [installation instructions page](/install.markdown).
 
 ## Stats about non-payment transactions
@@ -300,7 +299,7 @@ Nothing is indestructible, nothing is perfect. Bitcoin needs participants to act
 
 ### PR 29187: trying to fix datacarriersize 
 
->This section is a collaboration from [@NTeterel](https://x.com/NTeterel) and was adapted from [this article he previously wrote](https://www.cointribune.com/les-devs-de-bitcoin-core-soupconnes-de-corruption/)
+>This section is a collaboration with [@NTeterel](https://x.com/NTeterel) and was adapted from [this article he previously wrote](https://www.cointribune.com/les-devs-de-bitcoin-core-soupconnes-de-corruption/)
 
 Several developers in charge of the most popular Bitcoin client, Bitcoin Core, were being heckled for their passivity towards *Inscriptions* such as ordinals and other arbitrary data backed used to build ponzis.
 Bitcoin Core is the most used implementation of the Bitcoin protocol. It is the direct descendant of Satoshi Nakamoto's work. It is both a node and a wallet. Its code is maintained by hundreds of contributors. This is not the only available client (see [Detailed installation instructions](/install) to learn more about alternatives, and mainly the [Bitcoin Knots](https://bitcoinknots.org/) client, that are not as spam friendly as Core).
