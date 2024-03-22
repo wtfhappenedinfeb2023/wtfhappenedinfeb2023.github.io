@@ -20,6 +20,8 @@ layout: home
 
 If you have made your own node on linux, here is a simple and quick [guide](https://jesterhodl.com/raspibolt-replacing-bitcoin-core-with-knots/) to switch from Bitcoin Core to Bitcoin Knots.
 
+If you want to create from scratch a bitcoin node on alpine linux you can use this [guide](https://microbolt.guide/en-US), but make sure to use [Knots](https://microbolt.guide/en-US/bitcoin/bitcoin-client/bitcoin-knots) or to apply [ordisrespector patch](https://microbolt.guide/en-US/bitcoin/bitcoin-client/bitcoin-core#apply-patches) on Core.
+
 ## APT steps
 
 This steps work on Debian and Ubuntu.
