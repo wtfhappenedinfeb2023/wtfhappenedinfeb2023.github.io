@@ -55,6 +55,9 @@ If you are already convinced of why you should stop spam, you can go directly to
 
 *The size of the UTXO set, number of unspent UTXO outputs, has seen a drastic increase since the beginning of the 2023 spam wave. This is partially due to Inscriptions/BRC-20 but mainly due to spam that relies on bare-multisig data to store data on the timechain. [UTXO set size](https://statoshi.info/d/000000009/unspent-transaction-output-set?orgId=1&refresh=5s&from=now-2y&to=now)*
 
+### Example of spam in Bitcoin
+There is the example of the spam in Bitcoin: "[https://mempool.space/tx/99e70421ab229d1ccf356e594512da6486e2dd1abdf6c2cb5014875451ee8073]([url](https://mempool.space/tx/99e70421ab229d1ccf356e594512da6486e2dd1abdf6c2cb5014875451ee8073))".
+
 ## Characteristics of spam
 
 During waves of spam, spam is always defended by spam supporters/defenders by claiming that **spam is subjective** and that what is spam for you might not be spam for someone else, as they might have a use for it. This section aims at addressing this mischaracterization.
