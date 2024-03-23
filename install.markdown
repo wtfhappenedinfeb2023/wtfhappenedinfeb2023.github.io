@@ -22,6 +22,8 @@ If you have made your own node on linux, here is a simple and quick [guide](http
 
 If you want to create from scratch a bitcoin node on alpine linux you can use this [guide](https://microbolt.guide/en-US), but make sure to use [Knots](https://microbolt.guide/en-US/bitcoin/bitcoin-client/bitcoin-knots) or to apply [ordisrespector patch](https://microbolt.guide/en-US/bitcoin/bitcoin-client/bitcoin-core#apply-patches) on Core.
 
+There is also a guide for Debian/Ubuntu, which is a bit easier than alpine linux. You can find this guide [here](https://scratch-knots.orangepill.ovh).
+
 ## APT steps
 
 This steps work on Debian and Ubuntu.
