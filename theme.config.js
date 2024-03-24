@@ -23,10 +23,10 @@ export default {
 			<meta name="description" content="Website dedicated stop spam on Bitcoin." />
 			<meta name="og:description" content="Website dedicated stop spam on Bitcoin." />
 			<meta name="og:title" content="wtfhappenedinfeb2023" />
-			<meta name="og:image" content="https://wtfhappenedinfeb2023.com/" />
+			<meta name="og:image" content="https://wtfhappenedinfeb2023.com/bitcoin-banner.jpg" />
 			<meta name="og:url" content="https://wtfhappenedinfeb2023.com/" />
 			<meta name="twitter:card" content="summary_large_image" />
-			<meta name="twitter:image" content="https://https://wtfhappenedinfeb2023.com/" />
+			<meta name="twitter:image" content="https://https://wtfhappenedinfeb2023.com/bitcoin-banner.jpg" />
 			<meta name="twitter:site:domain" content="https://wtfhappenedinfeb2023.com/" />
 			<meta name="twitter:url" content="https://wtfhappenedinfeb2023.com/" />
 			<meta name="apple-mobile-web-app-title" content="wtfhappenedinfeb2023" />
