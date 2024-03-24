@@ -9,7 +9,7 @@ export default {
 		<>
 			<span className="mr-2 font-extrabold hidden md:inline">wtfhappenedinfeb2023</span>
 			<span className="text-gray-600 font-normal hidden md:inline">
-				Website dedicated stop spam on Bitcoin.
+				Website dedicated to stop spam on Bitcoin.
 			</span>
 		</>
 	),
