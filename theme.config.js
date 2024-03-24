@@ -15,11 +15,12 @@ export default {
 	),
 	head: (
 		<>
+			<title>WTF is spam on Bitcoin ?</title>
 			<meta charSet="utf-8"></meta>
 			<meta name="msapplication-TileColor" content="#ffffff" />
 			<meta name="theme-color" content="#ffffff" />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-			<meta httpEquiv="Content-Language" content="en, nl" />
+			<meta httpEquiv="Content-Language" content="en" />
 			<meta name="description" content="Website dedicated stop spam on Bitcoin." />
 			<meta name="og:description" content="Website dedicated stop spam on Bitcoin." />
 			<meta name="og:title" content="wtfhappenedinfeb2023" />
