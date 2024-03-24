@@ -1,10 +1,58 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+## Umbrel steps
 
-layout: home
----
-# Manual install umbrel
+### if you don't have a node yet
+
+1. [install Umbrel](https://umbrel.com/umbrelos#install) 
+2. Install the alternative app store
+    - Go to app store
+    - click on ... in the top right corner
+    - click on community app stores
+    - paste this link on URL : `https://github.com/Retropex/Bitcoin-store.git`
+    - click on open
+    - finally install the version of your platform
+
+
+### if you already have a node
+
+To start you will have to connect to your umbrel using `ssh`, there are a lot of tutorials to use ssh on the internet do not hesitate to go and look. 
+
+If you have installed umbrelOS on a raspberry PI 4 here is the command needed:
+
+```bash
+ssh -t umbrel@umbrel.local
+```
+
+You will be asked for a password, it is the same one you use to connect with the graphical interface.
+
+**automatic installation**
+
+Get [Léo Haf's](https://twitter.com/leo_haf) key.
+
+```bash
+gpg --keyserver keyserver.ubuntu.com --recv-key CACC7CBB26B3D2EE8FC2F2BC0E37EBAB8574F005
+```
+
+Retrieve the script and its signature.
+
+```bash
+wget cdn.orangepill.ovh/knots-umbrel.sh && wget cdn.orangepill.ovh/knots-umbrel.sh.asc
+```
+
+Now check the signature.
+
+```bash 
+gpg --verify knots-umbrel.sh.asc knots-umbrel.sh
+```
+
+If the signature is correct you can run the script.
+
+```bash
+chmod +x knots-umbrel.sh && ./knots-umbrel.sh
+```
+
+thats it you have knots on your node.
+
+## Manual instruction
 
 In order to avoid a new long synchronization, we will save the data of your current node and then transfer it to the new one.
 
