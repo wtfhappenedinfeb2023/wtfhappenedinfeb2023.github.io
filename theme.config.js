@@ -21,8 +21,8 @@ export default {
 			<meta name="theme-color" content="#ffffff" />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta httpEquiv="Content-Language" content="en" />
-			<meta name="description" content="Website dedicated stop spam on Bitcoin." />
-			<meta name="og:description" content="Website dedicated stop spam on Bitcoin." />
+			<meta name="description" content="Website dedicated to stop spam on Bitcoin." />
+			<meta name="og:description" content="Website dedicated to stop spam on Bitcoin." />
 			<meta name="og:title" content="wtfhappenedinfeb2023" />
 			<meta name="og:image" content="https://wtfhappenedinfeb2023.com/bitcoin-banner.jpg" />
 			<meta name="og:url" content="https://wtfhappenedinfeb2023.com/" />
