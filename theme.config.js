@@ -31,6 +31,8 @@ export default {
 			<meta name="twitter:site:domain" content="https://wtfhappenedinfeb2023.com/" />
 			<meta name="twitter:url" content="https://wtfhappenedinfeb2023.com/" />
 			<meta name="apple-mobile-web-app-title" content="wtfhappenedinfeb2023" />
+
+			<script defer data-domain="wtfhappenedinfeb2023.com" src="https://analytics.orangepill.ovh/js/script.js"></script>
 		</>
 	),
 	footer: true,
