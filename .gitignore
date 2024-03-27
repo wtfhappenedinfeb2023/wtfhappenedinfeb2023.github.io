@@ -4,3 +4,9 @@ _site
 .jekyll-metadata
 vendor
 .DS_store
+
+# Dependency directories
+node_modules/
+
+# Next.js build output
+.next
