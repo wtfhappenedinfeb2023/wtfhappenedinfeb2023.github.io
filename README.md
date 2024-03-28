@@ -1,1 +1,1 @@
-# [wtfhappenedinfeb2023.github.io](https://wtfhappenedinfeb2023.com/)
+# [wtfhappenedinfeb2023.com](https://wtfhappenedinfeb2023.com/)
