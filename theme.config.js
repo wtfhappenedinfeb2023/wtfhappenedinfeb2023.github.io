@@ -4,6 +4,7 @@ export default {
 	titleSuffix: " – wtfhappenedinfeb2023",
 	i18n: [
 		{ locale: 'en', text: 'English' },
+		{ locale: 'fr', text: 'French' }
 	],
 	logo: (
 		<>

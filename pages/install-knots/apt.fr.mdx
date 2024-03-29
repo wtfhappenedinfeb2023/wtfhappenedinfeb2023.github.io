@@ -1,0 +1,21 @@
+## APT
+
+Ces instructions fonctionnent sur Ubuntu et Debian.
+
+1. Récuperez la clé de Léo Haf et ajoutez la list des clés `apt`::
+
+```bash
+wget --quiet -O - https://apt.orangepill.ovh/gpg-pubkey.asc | sudo tee /etc/apt/keyrings/leohaf.asc
+```
+
+2. Ajoutez le dépot à votre liste de dépot `apt` et indiquez quelle clé GPG a utiliser:
+
+```bash
+echo "deb [signed-by=/etc/apt/keyrings/leohaf.asc arch=$(dpkg --print-architecture)] https://apt.orangepill.ovh stable main" | sudo tee /etc/apt/sources.list.d/bitcoin-knots.list
+```
+
+3. Mettez a jour Knots et installez Bitcoin Knots:
+
+```bash
+sudo apt update && sudo apt install bitcoin-knots
+```

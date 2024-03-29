@@ -1,0 +1,138 @@
+## Instruction pour Umbrel
+
+## App Store edition
+
+Bitcoin Knots est maintenant disponible dans l'App Store officiel d'Umbrel et vous pouvez l'installer [facilement](https://apps.umbrel.com/app/bitcoin-knots), cependant l'édition App Store n'est **PAS** compatible avec autres applications.
+Umbrel devrait publier une mise à jour pour le rendre compatible mais aucune date n'a été annoncée.
+
+## édition communautaire
+
+### si vous n'avez pas de noeud
+
+1. [installez Umbrel](https://umbrel.com/umbrelos#install) 
+2. Installez l'App Store alternatif
+    - allez dans l'App Sotre
+    - cliquez sur ... en haut a droite
+    - cliquez sur App Store communautaire
+    - collez ce lien : `https://github.com/Retropex/Bitcoin-store.git`
+    - cliquez sur ouvrir
+    - Enfin installez la version qui correspond a votre platforme
+
+
+### Si vous avez déjà un noeud
+
+Pour commencer vous devrez vous connecter à votre umbrel en utilisant `ssh`, il existe de nombreux tutoriels pour utiliser ssh sur internet n'hésitez pas à aller voir.
+
+Si vous avez installé umbrelOS sur un raspberry PI 4 voici la commande nécessaire :
+
+```bash
+ssh -t umbrel@umbrel.local
+```
+
+Un mot de passe vous sera demandé, c'est le même que celui que vous utilisez pour vous connecter à l'interface graphique.
+
+**installation automtique**
+
+Obtenez la clé de [Léo Haf](https://twitter.com/leo_haf).
+
+```bash
+gpg --keyserver keyserver.ubuntu.com --recv-key CACC7CBB26B3D2EE8FC2F2BC0E37EBAB8574F005
+```
+
+Récupérez le script et sa signature.
+
+```bash
+wget cdn.orangepill.ovh/knots-umbrel.sh && wget cdn.orangepill.ovh/knots-umbrel.sh.asc
+```
+
+Vérigiez la signature.
+
+```bash 
+gpg --verify knots-umbrel.sh.asc knots-umbrel.sh
+```
+
+Si la signature est correcte, vous pouvez exécuter le script.
+
+```bash
+chmod +x knots-umbrel.sh && ./knots-umbrel.sh
+```
+
+ça y est vous avez Knots.
+
+## instruction manuel
+
+Afin d'éviter une nouvelle synchronisation longue, nous sauvegarderons les données de votre nœud actuel puis les transférerons vers le nouveau.
+
+Commençons par arrêter tous les conteneurs :
+
+```
+sudo docker stop $(sudo docker ps -q)
+```
+
+Créez un dossier de sauvegarde :
+```
+mkdir ~/umbrel/backup
+```
+
+Déplacez tous les fichiers sauf le dossier Bitcoin :
+```
+cp -r ~/umbrel/app-data/!(bitcoin) ~/umbrel/backup
+```
+
+Supprimez les fichiers originaux :
+```
+sudo rm -r ~/umbrel/app-data/!(bitcoin)
+```
+
+Déplaçons maintenant la chaîne vers la racine afin qu'elle ne soit pas supprimée lors de la suppression de l'ancien nœud.
+
+``` 
+mv ~/umbrel/app-data/bitcoin/data/ ~/umbrel/
+```
+
+Nous pouvons maintenant supprimer le nœud.
+```
+sudo ./umbrel/scripts/app uninstall bitcoin
+```
+
+Si un message s'affiche vous indiquant que tor n'a pas pu être supprimé c'est normal, umbrel n'utilise pas tor uniquement pour Bitcoin.
+
+```
+sudo ~/umbrel/scripts/repo add https://github.com/Retropex/Bitcoin-store.git
+```
+
+La commande ci-dessus peut prendre jusqu'à cinq minutes pour être efficace.
+
+Pour exécuter le nouveau nœud vous devez choisir la bonne plateforme, si vous êtes sur arm64 (raspberry PI 4, mac M1, M2,etc) utilisez cette commande :
+```
+sudo ./umbrel/scripts/app install btc-knots
+```
+
+
+Si vous êtes sur x86-64 (la plupart des PC, serveur), utilisez cette commande :
+
+```
+sudo ./umbrel/scripts/app install btc-knotsx86
+```
+
+Maintenant que le nouveau nœud est installé, arrêtons-le pour restaurer les données.
+
+```
+sudo docker container stop btc-knots_server_1 btc-knots_bitcoind_1 btc-knots_i2pd_daemon_1 btc-knots_tor_1 btc-knots_app_proxy_1
+```
+
+Nous pouvons maintenant restaurer les données.
+
+```
+sudo rm -r ~/umbrel/app-data/btc-knots/data/
+mv ~/umbrel/data/ ~/umbrel/app-data/btc-knots/
+```
+
+Nous pouvons maintenant redémarrer votre ordinateur :
+
+```
+sudo shutdown -r now
+```
+
+
+Et voilà, vous avez désormais Knots.
