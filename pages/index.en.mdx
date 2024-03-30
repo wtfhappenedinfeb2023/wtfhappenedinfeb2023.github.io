@@ -37,7 +37,8 @@ This mempool does not contain this kind of spam:
 ### Example of spam in Bitcoin
 There is the example of the spam in Bitcoin: 
 
-"[inscription without any input or output](https://mempool.space/tx/99e70421ab229d1ccf356e594512da6486e2dd1abdf6c2cb5014875451ee8073)".
+"[inscription without any input or output](https://mempool.space/tx/99e70421ab229d1ccf356e594512da6486e2dd1abdf6c2cb5014875451ee8073)"
+
 "[inscription with input and output](https://mempool.space/fr/tx/3e35e0c6f33c47a77dc4639a7c9ff256db51ab7687c39d1b67f8e356410c5249)"
 
 ## Characteristics of spam
@@ -178,9 +179,6 @@ Watch [@LukeDashjr](https://twitter.com/LukeDashjr)'s interview during which he 
 </div>
 
 This challenge aims at showing that filters do work because Bitcoin Core currently has a default dust filter that makes it very hard to get a 100 sats transaction relayed.
-
-> Please send 100 sats to this address
-> bc1qc3qlmus3udzwrfxtkja8upe33jvlydwy2cjr96
 
 One of the participants to the conversation who accepted to take on the challenge has explicitly stated that they submitted such a transaction to a miner, allegedly Luxor, to mine this transaction as they know it won't be relayed by the network because of mempool policies. This action simply proves that mempool filters do work as they had to collude with a miner to get their transaction in a block, which didn't happen yet more than 4 hours after the challenge started because they need to wait for the miner they colluded with to find a block. This also means that the miner will have to continuously include this 100 sats transaction in their templates and that chances of this transaction making it through are as high as the hashrate share represented by the pool of that miner. This will of course mean that if transactions ready to pay a higher fee present themselves meanwhile, they might have to reject them to keep the 100 sats transaction if the block is already full. One of the participants who tried to do so actually explained that they [tried sending a 100 sats transaction to a larger pool, ViaBTC, which would maybe get it through faster, but that it got rejected](https://x.com/benthecarman/status/1743761650430181581?s=20) - most likely because of mempool policy (filters.)  
 The transaction will eventually make it through, but it required colluding with a miner that's willing to take it Out of Band, outside of the mempool, and that strongly limited the reach of the transaction since only a single pool is working on it which relegates it to the next block found by that pool. Currently, spam is mined by all miners which makes it present in blocks.  
@@ -327,7 +325,7 @@ It is true though that if it's a full node, it could at least help someone synch
 
 * Be vocal about your concerns, join discussions<sup>[[1](https://delvingbitcoin.org/t/bug-spammers-get-bitcoin-blockspace-at-discounted-price-lets-fix-it/327)] </sup><sup>,[[2](https://github.com/bitcoin/bitcoin/issues/29187)] </sup><sup>[[3](https://bitcoin.stackexchange.com/questions/121734/why-cant-nodes-have-the-relay-option-to-disallow-certain-transaction-types)]</sup>, ask questions, share knowledge. Remember that discussions are not always there to persuade the detractor, but to form an opinion of observers. Your voice **is** the market force.
 
-## A brief history of spam in the bitcoin network
+## History of spam on Bitcoin
 
 ### Free relays > Whitelists > Free relays
 
