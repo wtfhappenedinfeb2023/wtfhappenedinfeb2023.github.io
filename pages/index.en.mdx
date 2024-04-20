@@ -103,7 +103,7 @@ This second point can easily be understood with a simple thought experiment:
 
 ### Satoshi inscribed on-chain so I should be able to do it too
 
-A common argument presented by inscription supporters is that Satoshi started the trends of injecting data in the timechain with the Genesis block message. This **argument is simply wrong since Satoshi did not subvert ([2nd characteristic of spam](#characteristics-of-spam)) the protocol to "inscribe" data**, they simply used space already available in the Coinbase data that is designed to allow miners to broadcast arbitrary data when a block is found. **It's always been part of Bitcoin and didn't introduce any wastefulness.**  
+A common argument presented by inscription supporters is that Satoshi started the trends of injecting data in the timechain with the Genesis block message. This **argument is simply wrong since Satoshi did not subvert ([2nd characteristic of spam](#characteristics-of-spam)) the protocol to "inscribe" data**, he simply used space already available in the Coinbase data that is designed to allow miners to broadcast arbitrary data when a block is found. **It's always been part of Bitcoin and didn't introduce any wastefulness.**  
 [More information here.](https://www.oreilly.com/library/view/mastering-bitcoin/9781491902639/ch08.html)
 
 ![Mechanism used to inscribe the Genesis block message by Satoshi](/genesis_coinbase_data.jpeg)
@@ -242,7 +242,7 @@ However, here's the ranking of contributors ranked by the number of BIPs, improv
 ![BIP lords](/bip_lords.png)
 
 [Luke Dashjr](https://twitter.com/lukedashjr) - the second largest contributor - sparked a controversy by inviting Bitcoin Core to act to stop Inscriptions and other wasteful transactions from attacking the network.
-Luke Dashjr's did so through a [Pull Request, dated the 5th of January 05 2023. It is entitled: "Witness scripts being abused to bypass datacarriersize limit"](https://github.com/bitcoin/bitcoin/issues/29187).   
+Luke Dashjr did so through a [Pull Request, dated the 5th of January 05 2023. It is entitled: "Witness scripts being abused to bypass datacarriersize limit"](https://github.com/bitcoin/bitcoin/issues/29187).   
 The description of the Pull Request goes as follow:
 
 >The **datacarriersize** policy option is meant to limit the size of extra data allowed in transactions for relaying and mining. Since the end of 2022, however, attackers have found a way to bypass this limit by obfuscating their spam inside **OP_FALSE OP_IF** patterns instead of using the standardized **OP_RETURN**. This remains under active exploitation to a degree very harmful to Bitcoin even today.
@@ -254,11 +254,11 @@ For example, Bitcoin Core **does not relay by default transactions weighing more
 
 In Luke's PR, **Datacarriersize** refers to the "**OP_RETURN**" opcode (discussed in [Satoshi inscribed on-chain so I should be able to do it too](#satoshi-inscribed-on-chain-so-i-should-be-able-to-do-it-too)). **OP_RETURN** is an OP_CODE that was created in 2014 to offer an alternative to the more harmful techniques used at the time to insert arbitrary data on chain. It offers a limited space of 83 bytes per transaction that transaction emitters can use to add arbitrary data. That's enough to enter a SHA-256 hash (32 bytes) as well as an identification tag. **OP_RETURN** data will not be stored in the UTXO set (which is very harmful to the whole network) but **it will still be stored on nodes forever**.
 
-What Luke means here is that he considers it a bug that **Datacarriersize** was not applied to all types of transaction data in the Segwit and Taproot soft forks. Basically, he is saying that **Datacarriersize** should have been updated to consider the new structures of data allowed by the Segwit and Taproof updates.  
+What Luke means here is that he considers it a bug that **Datacarriersize** was not applied to all types of transaction data in the Segwit and Taproot soft forks. Basically, he is saying that **Datacarriersize** should have been updated to consider the new structures of data allowed by the Segwit and Taproot updates.  
 Fingers are often pointed at the SegWit and Taproot soft forks, which have increased and then eliminated the maximum size of transaction scripts. But that's a bit of a leap:
 > [The maximum size of transaction scripts] was **not lifted for purposes of exploiting it for data injection**. Data injection could always exceed the limit, at the consensus level. If the script was too big, it would simply not be executed. **Spam filters have always been at the policy level**, and that's where they ideally belong.
 
-In the absence of filters, **arbitrary data can easily be injected by anyone for any purpose through transactions that would have otherwise been rejected by default mempool policies**. This attack vector is what has been exploited by BRC-20 and Inscriptions to circumvent protocol limitations and subvert the purpose of the Bitcoin protocol for toen and storage purposes. The whole DoS operation is being payed for by those being lured into buying all these so-called "*projects*".  
+In the absence of filters, **arbitrary data can easily be injected by anyone for any purpose through transactions that would have otherwise been rejected by default mempool policies**. This attack vector is what has been exploited by BRC-20 and Inscriptions to circumvent protocol limitations and subvert the purpose of the Bitcoin protocol for token and storage purposes. The whole DoS operation is being payed for by those being lured into buying all these so-called "*projects*".  
 This can be considered as an **attack because these hundreds of thousands of voluminous transactions** lengthen the initial synchronization time of a node or the IBD (Initial Blockchain Download), which already takes between 2 days and 3 weeks! Not to mention the premature rise in transaction fees and the cost of the quickly growing memory required to run a node.
 
 #### Fixing a bug through documentation change
